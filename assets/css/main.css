@@ -617,6 +617,15 @@ progress::-webkit-progress-bar {
       width: 100%;
       height: 100%;
       border-radius: 0; } }
+  @media (min-width: 415px) and (max-width: 768px) {
+    #head-search-contain {
+      padding: 0;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0; } }
   #head-search-contain .search {
     padding: 5px;
     height: 36px;
