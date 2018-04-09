@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/site/favicon.ico">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+  <div class="head-line"></div>
+<progress value="0" id="head-progress" class="flat"></progress>
+  <div id="head-title"><a href="/">LEONMIN</a></div>
+  <div class="head-brand">
+    <div id="head-back">
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <div id="head-search">
+      <div id="head-search-btn">
+  <i class="fa fa-search"></i>
+</div>
+<div id="head-mask"></div>
+<div id="head-search-contain">
+  <div class="search">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input type="text" id="search-input" placeholder="Searching.." class="search-input">
+    </div>
+    <span class="search-close-icon">
+      <i class="fa fa-times-circle-o"></i>
+    </span>
+  </div>
+  <div class="search-result">
+    <div id="results-container"></div>
+  </div>
+</div>
+    </div>
+    <div id="head-menu">
+      <div class="head-menu-btn">
+    <p class="drawer-hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </p>
+  </div>
+<nav id="head-menu-contain">
+  <h2>MENU</h2>
+  <ul class="site-ham-list">
+    <li>
+      <a href="/">LIMI</a>
+    </li>
+    <li>
+      <a href="/archive/">ARCHIVE</a>
+    </li>
+    <li>
+      <a href="/tags/">TAGS</a>
+    </li>
+    <li>
+      <a href="/about/">ABOUT</a>
+    </li>
+  </ul>
+  <dl class="site-ham-item">
+    <dt>TEL</dt>
+    <dd>
+      <a href="tel:097-547-9781">Tel.184-8360-0000</a>
+    </dd>
+    <dt>CONNECT</dt>
+    <div class="aside-content">
+      <span>
+        <a href="http://weibo.com/leonmin" target="_blank">
+          <i class="fa fa-weibo fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://github.com/leonmin" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://twitter.com/leonminnn" target="_blank">
+          <i class="fa fa-twitter fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href=" /feed.xml ">
+          <i class="fa fa-rss fa-3x"></i>
+        </a>
+      </span>
+    </div>
+  </dl>
+</nav>
+
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <h1 class="page-heading"> “Angular”<span>分类的归档</span></h1>
+
+<article class="post">
+	<header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/22/angular-05-ts.html">Angular-5-TypeScirpt</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月22日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+	<div class="post-content">
+		<h4 id="1-angular是用typescript构建的">1. Angular是用TypeScript构建的</h4>
+
+<p>TypeScript并不是一门全新的语言,而是ES6的超集.所有的ES6代码都是完全可以编译的TypeScript代码.</p>
+
+<h4 id="2-typescript特性">2. TypeScript特性</h4>
+
+<p>(1) 类型</p>
+
+<p>(2) 类</p>
+
+<p>(3) 注解</p>
+
+<p>(4) 模块导入</p>
+
+<p>(5) 语言工具包</p>
+
+
+		<footer>
+			<a class="morebox" href="/angular/2017/11/22/angular-05-ts.html">Read More..</a>
+		</footer>
+	</div>
+</article>
+
+<article class="post">
+	<header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/19/angular-04.html">Angular-4-完善应用</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月19日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+	<div class="post-content">
+		<h4 id="1-渲染多行">1. 渲染多行</h4>
+
+<h4 id="2-创建article类">2. 创建Article类</h4>
+
+<p>写Angular代码的最佳实践之一就是尝试从组件代码中把你正在使用的数据结构隔离出来.这到这一点就要创建一个数据结构,用以表示单个文章:</p>
+
+<p><strong>PATH:</strong>angular/src/app/article/article.model.ts</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">Article</span><span class="p">{</span>
+  <span class="nl">title</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="nl">link</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="nl">votes</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">title</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span><span class="nx">link</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span><span class="nx">votes</span><span class="p">?:</span> <span class="nx">number</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">title</span><span class="o">=</span> <span class="nx">title</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">link</span><span class="o">=</span> <span class="nx">link</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">votes</span><span class="o">=</span> <span class="nx">votes</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+		<footer>
+			<a class="morebox" href="/angular/2017/11/19/angular-04.html">Read More..</a>
+		</footer>
+	</div>
+</article>
+
+<article class="post">
+	<header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/17/angular-03.html">Angular-3-创建应用</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月17日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+	<div class="post-content">
+		<p>目标:创建一个仿Reddit的应用.
+分析: 应用程序中需要构造两个组件:</p>
+<ul>
+  <li>整体应用程序,包含一个用来提交的表单;</li>
+  <li>每个文章;</li>
+</ul>
+
+<h4 id="1-创建应用">1. 创建应用</h4>
+<p>生成新项目:
+<code class="highlighter-rouge">$ ng new angular-reddit</code></p>
+<h4 id="2-应用程序组件">2. 应用程序组件</h4>
+<p>构建一个新组件:
+(1) 存储当前的文章列表;
+(2) 包含一个表单,用来提交新文章.
+
+		<footer>
+			<a class="morebox" href="/angular/2017/11/17/angular-03.html">Read More..</a>
+		</footer>
+	</div>
+</article>
+
+<article class="post">
+	<header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/17/angular-02.html">Angular-2-绑定数据</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月17日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+	<div class="post-content">
+		<h4 id="1-把数据添加到组件中">1. 把数据添加到组件中</h4>
+
+<p>创建app-user-item标签:
+<code class="highlighter-rouge">$ ng generate component user-item</code>
+若希望UserItemComponent显示一个指定用户的名字.</p>
+
+<p><strong>PATH:</strong>angular/src/app/user-item/user-item.component.ts</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">UserItemComponent</span> <span class="kr">implements</span> <span class="nx">Oninit</span><span class="p">{</span>
+  <span class="nl">name</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="o">=</span> <span class="s1">'Felipe'</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nx">ngOnInit</span><span class="p">(){</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+		<footer>
+			<a class="morebox" href="/angular/2017/11/17/angular-02.html">Read More..</a>
+		</footer>
+	</div>
+</article>
+
+<article class="post">
+	<header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/17/angular-01.html">Angular-1-搭建项目</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月17日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+	<div class="post-content">
+		<h4 id="1-制作component">1. 制作Component</h4>
+<p>Angular背后的指导思想之一就是组件化,而组件化的基本思想就是教浏览器认识一些拥有自定义功能的新标签.</p>
+
+<p>要使用angular-cli来创建组件,可以使用generate(生成)命令:</p>
+
+<p><code class="highlighter-rouge">$ ng generate component hello-world</code></p>
+
+<p>基本组件包括两部分:</p>
+
+<p><strong>(1) Component注解</strong></p>
+
+<p><strong>(2) 组件定义类</strong></p>
+
+
+		<footer>
+			<a class="morebox" href="/angular/2017/11/17/angular-01.html">Read More..</a>
+		</footer>
+	</div>
+</article>
+
+<article class="post">
+	<header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/17/angular-start.html">Angular-0-环境配置</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月17日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+	<div class="post-content">
+		<h4 id="1-安装nodejs">1. 安装Node.js:<br /></h4>
+<p>验证版本:node 6.9.x和npm 3.x.x<br />
+<code class="highlighter-rouge">$ node -v</code><br />
+<code class="highlighter-rouge">$ npm -v</code></p>
+<h4 id="2-安装typescript">2. 安装TypeScript:<br /></h4>
+<p><code class="highlighter-rouge">$ npm install -g typescript</code><br /></p>
+<h4 id="3-安装angular-cli命令行工具">3. 安装angular-cli命令行工具:</h4>
+<p><code class="highlighter-rouge">$ npm install -g @angular/cli</code><br />
+
+		<footer>
+			<a class="morebox" href="/angular/2017/11/17/angular-start.html">Read More..</a>
+		</footer>
+	</div>
+</article>
+
+
+    </main>
+    <footer id="footer">
+  <div class="move-btn">
+	<div class="move-con">
+		<div class="circleProgress_wrapper">
+			<div class="wrapper right">
+				<div class="circleProgress rightcircle"></div>
+			</div>
+			<div class="wrapper left">
+				<div class="circleProgress leftcircle"></div>
+			</div>
+		</div>
+		<div class="circle"></div>
+		<div class="arrow arrow-hit">
+			<i class="fa fa-lg fa-chevron-down"></i>
+		</div>
+	</div>
+</div>
+  <div class="contact-list">
+    <div class="contact">
+      <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
+      <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="friend-link">
+      <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt=""></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/simple-jekyll-search.js"></script>
+  <script src="/assets/js/limon.js"></script>
+</body>
+</html>

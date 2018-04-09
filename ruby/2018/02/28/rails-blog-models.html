@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/site/favicon.ico">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+  <div class="head-line"></div>
+<progress value="0" id="head-progress" class="flat"></progress>
+  <div id="head-title"><a href="/">LEONMIN</a></div>
+  <div class="head-brand">
+    <div id="head-back">
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <div id="head-search">
+      <div id="head-search-btn">
+  <i class="fa fa-search"></i>
+</div>
+<div id="head-mask"></div>
+<div id="head-search-contain">
+  <div class="search">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input type="text" id="search-input" placeholder="Searching.." class="search-input">
+    </div>
+    <span class="search-close-icon">
+      <i class="fa fa-times-circle-o"></i>
+    </span>
+  </div>
+  <div class="search-result">
+    <div id="results-container"></div>
+  </div>
+</div>
+    </div>
+    <div id="head-menu">
+      <div class="head-menu-btn">
+    <p class="drawer-hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </p>
+  </div>
+<nav id="head-menu-contain">
+  <h2>MENU</h2>
+  <ul class="site-ham-list">
+    <li>
+      <a href="/">LIMI</a>
+    </li>
+    <li>
+      <a href="/archive/">ARCHIVE</a>
+    </li>
+    <li>
+      <a href="/tags/">TAGS</a>
+    </li>
+    <li>
+      <a href="/about/">ABOUT</a>
+    </li>
+  </ul>
+  <dl class="site-ham-item">
+    <dt>TEL</dt>
+    <dd>
+      <a href="tel:097-547-9781">Tel.184-8360-0000</a>
+    </dd>
+    <dt>CONNECT</dt>
+    <div class="aside-content">
+      <span>
+        <a href="http://weibo.com/leonmin" target="_blank">
+          <i class="fa fa-weibo fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://github.com/leonmin" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://twitter.com/leonminnn" target="_blank">
+          <i class="fa fa-twitter fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href=" /feed.xml ">
+          <i class="fa fa-rss fa-3x"></i>
+        </a>
+      </span>
+    </div>
+  </dl>
+</nav>
+
+    </div>
+  </div>
+</header>
+    <main class="main">
+      
+<section id="posts">
+    
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/ruby/2018/02/28/rails-blog-models.html">Ruby on Rails(添加用户和微博对象)</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2018年2月28日</span>
+        <span class="post-cate"><a href="/category/ruby/" title="Ruby">Ruby</a></span>
+      </div>
+  </header>
+  <section class="post-content">
+    <blockquote>
+  <p>Goals:添加Users资源和Microposts资源</p>
+</blockquote>
+
+<h4 id="1-users资源">1. Users资源</h4>
+
+<p>目的:创建Users资源(对象),通过HTTP协议在网页中创建(create),读取(read),更新(update)和删除(delete)资源.</p>
+
+<p>1° 使用Rails内置脚手架生成Users资源</p>
+
+<p><code class="highlighter-rouge">$ rails generate scaffold User name:string email:string</code></p>
+
+<p>① 脚手架中使用的名称与模型一样是单数,使用User;资源和控制器是复数,使用Users.</p>
+
+<p>② 没必要指定id字段,Rails会自动创建并将其设为表的主键.
+<!-- more --></p>
+
+<p>2° 迁移数据库</p>
+
+<p><code class="highlighter-rouge">$ rails db:migrate</code></p>
+
+<p>① 这句命令的作用是使用新的User数据模型更新数据库(一般数据模型改变后使用).</p>
+
+<p>② Rails 5之前的版本<code class="highlighter-rouge">db:migrate</code>命令使用<code class="highlighter-rouge">rake</code>执行:</p>
+
+<p><code class="highlighter-rouge">$ bundle exec rake db:migrate</code></p>
+
+<p>3 ° 浏览用户相关的页面</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>URL</th>
+      <th>动作</th>
+      <th>作用</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/users</td>
+      <td>index</td>
+      <td>列出所有用户</td>
+    </tr>
+    <tr>
+      <td>/users/1</td>
+      <td>show</td>
+      <td>显示ID为1的用户</td>
+    </tr>
+    <tr>
+      <td>/users/new</td>
+      <td>new</td>
+      <td>创建新用户</td>
+    </tr>
+    <tr>
+      <td>/users/1/edit</td>
+      <td>edit</td>
+      <td>编辑ID为1的用户</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>① Users资源索引页: http://localhost:3000/users</p>
+
+<p><img src="/assets/images/posts/2-01.png" alt="2-01" class="post-r-img" /></p>
+
+<p>② 新建用户页面: http://localhost:3000/users/new</p>
+
+<p><img src="/assets/images/posts/2-02.png" alt="2-02" class="post-r-img" /></p>
+
+<p>③ 显示某个用户的页面: http://localhost:3000/users/1</p>
+
+<p><img src="/assets/images/posts/2-03.png" alt="2-03" class="post-r-img" /></p>
+
+<p>④ 编辑用户信息的页面: http://localhost:3000/users/1/edit</p>
+
+<p><img src="/assets/images/posts/2-04.png" alt="2-04" class="post-r-img" /></p>
+
+<p>⑤ 创建用户后的用户索引页: http://localhost:3000/users</p>
+
+<p><img src="/assets/images/posts/2-05.png" alt="2-05" class="post-r-img" /></p>
+
+<h4 id="2-为users设置路由">2. 为Users设置路由</h4>
+
+<p><strong>PATH:</strong> rails/config/routes.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Rails</span><span class="p">.</span><span class="nf">application</span><span class="p">.</span><span class="nf">routes</span><span class="p">.</span><span class="nf">draw</span> <span class="k">do</span>
+  <span class="n">resources</span> <span class="ss">:users</span>
+  <span class="n">root</span> <span class="s1">'users#index'</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h4 id="3-了解rest">3. 了解REST</h4>
+
+<p>1° Users控制器代码摘要:</p>
+
+<p><strong>PATH:</strong> rails/app/controllers/users_controller.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">UsersController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+  <span class="o">...</span>
+  <span class="k">def</span> <span class="nf">index</span>
+    <span class="o">...</span>
+  <span class="k">end</span>
+  
+  <span class="k">def</span> <span class="nf">show</span>
+    <span class="o">...</span>
+  <span class="k">end</span>
+  
+  <span class="k">def</span> <span class="nf">new</span>
+    <span class="o">...</span>
+  <span class="k">end</span>
+  <span class="o">...</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>① 可以看到Users控制器中有index,show,new,edit,create,update和destroy动作.</p>
+
+<p>② 有些动作直接渲染页面;有的动作只会修改数据库中保存的数据.</p>
+
+<p>2° Users资源生成的符合REST架构的路由</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP请求</th>
+      <th>URL</th>
+      <th>动作</th>
+      <th>作用</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/users</td>
+      <td>index</td>
+      <td>列出所有用户</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/users/1</td>
+      <td>show</td>
+      <td>显示ID为1的用户</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/users/new</td>
+      <td>new</td>
+      <td>显示创建新用户的页面</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>/users</td>
+      <td>create</td>
+      <td>创建新用户</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/users/1/edit</td>
+      <td>edit</td>
+      <td>显示ID为1的用户的编辑页面</td>
+    </tr>
+    <tr>
+      <td>PATCH</td>
+      <td>/users/1</td>
+      <td>update</td>
+      <td>更新ID为1的用户</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>/users/1</td>
+      <td>destroy</td>
+      <td>删除ID为1的用户</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>① REST是”表现层状态化”(REpresentational State Transfer)的简称.</p>
+
+<p>② REST使组件被模型化,变成资源(resource),可以创建(create),读取(read),更新(update)和删除(delete).这些操作与关系数据库中的CRUD操作和HTTP请求方法(POST,GET,PATCH,DELETE)对应.</p>
+
+<p>3° Users控制器index方法解析:</p>
+
+<p><strong>PAHT:</strong> rails/app/controllers/users_controller.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">UsersController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+  <span class="o">...</span>
+  <span class="k">def</span> <span class="nf">index</span>
+    <span class="vi">@users</span> <span class="o">=</span> <span class="no">User</span><span class="p">.</span><span class="nf">all</span>
+  <span class="k">end</span>
+  <span class="o">...</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>① 代码中<code class="highlighter-rouge">@users = User.all</code>让User模型从数据库中检索所有用户,然后把结果赋值给<code class="highlighter-rouge">@users</code>变量.</p>
+
+<p>② User模型使用Rails中的Active Record的库后,User.all就能返回数据库中的所有用户:</p>
+
+<p><strong>PAHT:</strong> rails/app/models/user.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>③ 以<code class="highlighter-rouge">@</code>开头的变量是实例变量,在视图中自动可用.即<code class="highlighter-rouge">index.html.erb</code>视图中可以得到<code class="highlighter-rouge">@users</code>变量:</p>
+
+<p><strong>PATH:</strong> rails/views/users/index.html.erb</p>
+
+<div class="language-erb highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+<span class="cp">&lt;%</span> <span class="vi">@users</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">user</span><span class="o">|</span> <span class="cp">%&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;td&gt;</span><span class="cp">&lt;%=</span> <span class="n">user</span><span class="p">.</span><span class="nf">name</span> <span class="cp">%&gt;</span><span class="nt">&lt;/td&gt;</span>
+  ...
+<span class="nt">&lt;/tr&gt;</span>
+<span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+...
+</code></pre></div></div>
+
+<h4 id="4-microposts资源">4. Microposts资源</h4>
+
+<p>1° 使用脚手架创建Microposts资源:</p>
+
+<p><code class="highlighter-rouge">$ rails generate scaffold Micropost content:text user_id:integer</code></p>
+
+<p>2° 迁移数据库:</p>
+
+<p><code class="highlighter-rouge">$ rails db:migrate</code></p>
+
+<p>3° 脚手架会自动更新Rails的路由:</p>
+
+<p><strong>PAHT:</strong> rails/config/routes.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Rails</span><span class="p">.</span><span class="nf">application</span><span class="p">.</span><span class="nf">routes</span><span class="p">.</span><span class="nf">draw</span> <span class="k">do</span>
+  <span class="n">resources</span> <span class="ss">:microposts</span>
+  <span class="n">resources</span> <span class="ss">:users</span>
+  <span class="n">root</span> <span class="s1">'users#index'</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>其他内容与Users资源没什么区别.</p>
+
+<p>① 发布微博的页面: http://localhost:3000/microposts/new</p>
+
+<p><img src="/assets/images/posts/2-06.png" alt="2-06" class="post-r-img" /></p>
+
+<p>② 微博索引页: http://localhost:3000/microposts</p>
+
+<p><img src="/assets/images/posts/2-07.png" alt="2-07" class="post-r-img" /></p>
+
+<h4 id="5-限制微博的长度length">5. 限制微博的长度(length)</h4>
+
+<p><strong>PAHT:</strong> rails/app/models/micropost.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Micropost</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">validates</span> <span class="ss">:content</span><span class="p">,</span> <span class="ss">length: </span><span class="p">{</span><span class="ss">maximum: </span><span class="mi">140</span><span class="p">}</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>① 当发布微博时输入字数超过140个字符时显示的错误信息:</p>
+
+<p><img src="/assets/images/posts/2-08.png" alt="2-08" class="post-r-img" /></p>
+
+<h4 id="6-用户与微博">6. 用户与微博</h4>
+
+<p>1° 一个用户拥有多篇微博:</p>
+
+<p><strong>PATH:</strong> rails/models/user.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">has_many</span> <span class="ss">:microposts</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>2° 一篇微博属于一个用户:</p>
+
+<p><strong>PAHT:</strong> rails/models/mircopost.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Micropost</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">belongs_to</span> <span class="ss">:user</span>
+  <span class="n">validates</span> <span class="ss">:content</span><span class="p">,</span> <span class="n">length</span><span class="p">:{</span><span class="ss">maximum: </span><span class="mi">140</span><span class="p">}</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>3° 查看微博和用户的关系:</p>
+
+<p>可以使用<code class="highlighter-rouge">rails console</code>打开控制台,并使用<code class="highlighter-rouge">exit</code>命令退出控制台:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rails console
+<span class="o">&gt;&gt;</span> first_user <span class="o">=</span> User.first
+<span class="o">=&gt;</span> <span class="c">#&lt;User id:1,name:"leonmin",..&gt;</span>
+<span class="o">&gt;&gt;</span> first_user.microposts
+<span class="o">=&gt;</span> <span class="o">[</span><span class="c">#&lt;Micropost id:1,content:"First post"..&gt;]</span>
+<span class="o">&gt;&gt;</span> micropost <span class="o">=</span> first_user.microposts.first
+<span class="o">=&gt;</span> <span class="c">#&lt;Micropost id:1,content:"First post"..&gt;</span>
+<span class="o">&gt;&gt;</span> micropost.user
+<span class="o">=&gt;</span> <span class="c">#&lt;User id:1,name:"leonmin",..&gt;</span>
+<span class="o">&gt;&gt;</span> <span class="nb">exit</span>
+</code></pre></div></div>
+
+<h4 id="7-验证内容存在性presence">7. 验证内容存在性(presence)</h4>
+
+<p><strong>PAHT:</strong> rails/app/models/micropost.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Micropost</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">belongs_to</span> <span class="ss">:user</span>
+  <span class="n">validates</span> <span class="ss">:content</span><span class="p">,</span><span class="n">length</span><span class="p">:{</span><span class="ss">maximum: </span><span class="mi">140</span><span class="p">},</span><span class="ss">presence: </span><span class="kp">true</span>
+</code></pre></div></div>
+
+<p><strong>PATH:</strong> rails/app/models/user.rb</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="n">has_many</span> <span class="ss">:microposts</span>
+  <span class="n">validate</span> <span class="ss">:name</span><span class="p">,</span><span class="ss">presence: </span><span class="kp">true</span>
+  <span class="n">validate</span> <span class="ss">:email</span><span class="p">,</span><span class="ss">presence: </span><span class="kp">true</span>
+</code></pre></div></div>
+
+<h4 id="8-部署">8. 部署</h4>
+
+<p>1° 部署到GitHub:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git status
+<span class="nv">$ </span>git add <span class="nt">-A</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Add User and Micropost.."</span>
+<span class="nv">$ </span>git push
+</code></pre></div></div>
+
+<p>2° 部署到Heroku</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push heroku
+<span class="nv">$ </span>heroku run rails db:migrate
+</code></pre></div></div>
+
+<p><a>[Q1:可能git push heroku失败]</a></p>
+
+<p>3° 查看部署页面</p>
+
+<p>可以看到现在可以使用Heroku分配的二级域名访问网站:</p>
+
+<p><img src="/assets/images/posts/2-09.png" alt="2-09" class="post-r-img" /></p>
+
+<hr />
+
+<div class="ques">
+  [Q1: git push heroku 失败]
+</div>
+<p>(错误信息为:”fatal:unable to access ‘https://git.heroku.com/yag-rails-blog.git/’:SSL:no alternative certificate subject name matches target host name ‘git.heroku.com’”)</p>
+<div class="ans">
+  [K1: SSH密钥]
+</div>
+<p>A: 可能的原因是没有添加SSH密钥,使用以下代码:
+<code class="highlighter-rouge">$ heroku keys:add</code></p>
+
+
+  </section>
+  <footer class="post-footer">
+    
+<div class="post-f-nav" id="post-nav-id">
+  <div class="post-f-nav-next post-f-nav-item">
+    
+  </div>
+  <span class="post-nav-divider"></span>
+  <div class="post-f-nav-prev post-f-nav-item">
+    
+    <a href="/ruby/2018/02/27/rails-blog-build.html" rel="prev" title="Ruby on Rails(搭建项目)">
+      Ruby on Rails(搭建项目)
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+  </footer>
+</article>
+</section>
+
+
+    </main>
+    <footer id="footer">
+  <div class="move-btn">
+	<div class="move-con">
+		<div class="circleProgress_wrapper">
+			<div class="wrapper right">
+				<div class="circleProgress rightcircle"></div>
+			</div>
+			<div class="wrapper left">
+				<div class="circleProgress leftcircle"></div>
+			</div>
+		</div>
+		<div class="circle"></div>
+		<div class="arrow arrow-hit">
+			<i class="fa fa-lg fa-chevron-down"></i>
+		</div>
+	</div>
+</div>
+  <div class="contact-list">
+    <div class="contact">
+      <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
+      <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="friend-link">
+      <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt=""></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/simple-jekyll-search.js"></script>
+  <script src="/assets/js/limon.js"></script>
+</body>
+</html>

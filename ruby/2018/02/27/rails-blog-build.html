@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/site/favicon.ico">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+  <div class="head-line"></div>
+<progress value="0" id="head-progress" class="flat"></progress>
+  <div id="head-title"><a href="/">LEONMIN</a></div>
+  <div class="head-brand">
+    <div id="head-back">
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <div id="head-search">
+      <div id="head-search-btn">
+  <i class="fa fa-search"></i>
+</div>
+<div id="head-mask"></div>
+<div id="head-search-contain">
+  <div class="search">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input type="text" id="search-input" placeholder="Searching.." class="search-input">
+    </div>
+    <span class="search-close-icon">
+      <i class="fa fa-times-circle-o"></i>
+    </span>
+  </div>
+  <div class="search-result">
+    <div id="results-container"></div>
+  </div>
+</div>
+    </div>
+    <div id="head-menu">
+      <div class="head-menu-btn">
+    <p class="drawer-hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </p>
+  </div>
+<nav id="head-menu-contain">
+  <h2>MENU</h2>
+  <ul class="site-ham-list">
+    <li>
+      <a href="/">LIMI</a>
+    </li>
+    <li>
+      <a href="/archive/">ARCHIVE</a>
+    </li>
+    <li>
+      <a href="/tags/">TAGS</a>
+    </li>
+    <li>
+      <a href="/about/">ABOUT</a>
+    </li>
+  </ul>
+  <dl class="site-ham-item">
+    <dt>TEL</dt>
+    <dd>
+      <a href="tel:097-547-9781">Tel.184-8360-0000</a>
+    </dd>
+    <dt>CONNECT</dt>
+    <div class="aside-content">
+      <span>
+        <a href="http://weibo.com/leonmin" target="_blank">
+          <i class="fa fa-weibo fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://github.com/leonmin" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://twitter.com/leonminnn" target="_blank">
+          <i class="fa fa-twitter fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href=" /feed.xml ">
+          <i class="fa fa-rss fa-3x"></i>
+        </a>
+      </span>
+    </div>
+  </dl>
+</nav>
+
+    </div>
+  </div>
+</header>
+    <main class="main">
+      
+<section id="posts">
+    
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/ruby/2018/02/27/rails-blog-build.html">Ruby on Rails(搭建项目)</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2018年2月27日</span>
+        <span class="post-cate"><a href="/category/ruby/" title="Ruby">Ruby</a></span>
+      </div>
+  </header>
+  <section class="post-content">
+    <div class="lm-tag-con"><span class="lm-tag-key">开发环境</span><span class="lm-tag-value">Mac</span></div>
+<div class="lm-tag-con"><span class="lm-tag-key">开发编辑器</span><span class="lm-tag-value">VS Code</span></div>
+<div class="lm-tag-con"><span class="lm-tag-key">ruby版本</span><span class="lm-tag-value">2.4.2</span></div>
+<div class="lm-tag-con"><span class="lm-tag-key">rails版本</span><span class="lm-tag-value">5.1.4</span></div>
+
+<h4 id="1-新建一个项目">1. 新建一个项目</h4>
+
+<p><code class="highlighter-rouge">$ rails new yag_rails_blog</code></p>
+
+<p>执行<code class="highlighter-rouge">rails new</code>命令生成所有文件后,会自动执行<code class="highlighter-rouge">bundle install</code>命令.</p>
+
+<p>生成的程序目录如下表:
+<!-- more --></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">文件/文件夹</th>
+      <th style="text-align: left">作用</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">app/</td>
+      <td style="text-align: left">应用的核心文件,包括模型,视图,控制器等</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">app/assets</td>
+      <td style="text-align: left">应用的静态资源文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">bin/</td>
+      <td style="text-align: left">可执行的二进制文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">config/</td>
+      <td style="text-align: left">应用的配置</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">db/</td>
+      <td style="text-align: left">数据库文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">doc/</td>
+      <td style="text-align: left">应用的文档</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">lib/</td>
+      <td style="text-align: left">代码库模块文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">lib/assets</td>
+      <td style="text-align: left">代码块的静态文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">log/</td>
+      <td style="text-align: left">应用的日志文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">public/</td>
+      <td style="text-align: left">公共可访问文件,如错误页面</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">bin/rails</td>
+      <td style="text-align: left">生成代码,打开终端会话或启动本地服务器的程序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">test/</td>
+      <td style="text-align: left">应用的测试</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">tmp/</td>
+      <td style="text-align: left">临时文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">vendor/</td>
+      <td style="text-align: left">第三方代码,例如插件和gem</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">vendor/assets</td>
+      <td style="text-align: left">第三方静态资源</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">README.md</td>
+      <td style="text-align: left">应用简介</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Rakefile</td>
+      <td style="text-align: left">使用rake命令执行的实用任务</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Gemfile</td>
+      <td style="text-align: left">应用所需的gem</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Gemfile.lock</td>
+      <td style="text-align: left">gem列表,确保这个应用的副本使用相同版本gem</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">config.ru</td>
+      <td style="text-align: left">Rack中间件的配置文件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">.gitignore</td>
+      <td style="text-align: left">Git忽略的文件模式</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="修该项目中默认生成的gemfile文件">修该项目中默认生成的Gemfile文件</h5>
+
+<p>1° 如果没有在gem指令中指定版本号,Bundler会自动安装最新版本:</p>
+
+<p><code class="highlighter-rouge">gem 'sqlite3'</code></p>
+
+<p>2° 指定gem版本范围,在一定程度上控制Rails版本:</p>
+
+<p><code class="highlighter-rouge">gem 'uglifier', '&gt;= 1.3.0'</code></p>
+
+<p>表示安装版本号大于等于1.3.0的uglifier.</p>
+
+<p><code class="highlighter-rouge">gem 'coffee-rails', '~&gt; 4.0.0'</code></p>
+
+<p>表示安装版本号大于4.0.0但是小于4.1.0的coffee-rails.</p>
+
+<p>即<code class="highlighter-rouge">&gt;=</code>表示始终安装最新版本;而<code class="highlighter-rouge">~&gt;</code>表示安装最后一个数字变化的版本(比如4.0.0到4.0.1),不会安装前面的数字发生变化的更新(比如4.0到4.1).</p>
+
+<p>3° 使用精确的版本号,可以防止版本升级导致的程序错误.</p>
+
+<p>4° 修改Gemfile文件:</p>
+
+<p><strong>PATH:</strong> rails/Gemfile</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span> <span class="s1">'rails'</span><span class="p">,</span> <span class="s1">'5.1.4'</span>
+<span class="n">gem</span> <span class="s1">'rake'</span><span class="p">,</span> <span class="s1">'12.3.0'</span>
+<span class="n">gem</span> <span class="s1">'bcrypt'</span><span class="p">,</span> <span class="s1">'3.1.11'</span>
+<span class="n">gem</span> <span class="s1">'faker'</span><span class="p">,</span> <span class="s1">'1.7.3'</span>
+<span class="n">gem</span> <span class="s1">'carrierwave'</span><span class="p">,</span> <span class="s1">'1.1.0'</span>
+<span class="n">gem</span> <span class="s1">'carrierwave-qiniu'</span><span class="p">,</span> <span class="s1">'1.1.5'</span>
+<span class="n">gem</span> <span class="s1">'mini_magick'</span><span class="p">,</span> <span class="s1">'4.7.0'</span>
+<span class="n">gem</span> <span class="s1">'fog'</span><span class="p">,</span> <span class="s1">'1.40.0'</span>
+<span class="n">gem</span> <span class="s1">'will_paginate'</span><span class="p">,</span> <span class="s1">'3.1.5'</span>
+<span class="n">gem</span> <span class="s1">'bootstrap-will_paginate'</span><span class="p">,</span> <span class="s1">'1.0.0'</span>
+<span class="n">gem</span> <span class="s1">'jquery-rails'</span><span class="p">,</span> <span class="s1">'4.3.1'</span>
+<span class="n">gem</span> <span class="s1">'bootstrap-sass'</span><span class="p">,</span> <span class="s1">'3.3.7'</span>
+<span class="n">gem</span> <span class="s1">'puma'</span><span class="p">,</span> <span class="s1">'3.9.1'</span>
+<span class="n">gem</span> <span class="s1">'sass-rails'</span><span class="p">,</span> <span class="s1">'5.0.6'</span>
+<span class="n">gem</span> <span class="s1">'uglifier'</span><span class="p">,</span> <span class="s1">'3.2.0'</span>
+<span class="n">gem</span> <span class="s1">'coffee-rails'</span><span class="p">,</span> <span class="s1">'4.2.2'</span>
+<span class="n">gem</span> <span class="s1">'turbolinks'</span><span class="p">,</span> <span class="s1">'5.0.1'</span>
+<span class="n">gem</span> <span class="s1">'jbuilder'</span><span class="p">,</span> <span class="s1">'2.7.0'</span>
+<span class="n">gem</span> <span class="s1">'platform-api'</span><span class="p">,</span> <span class="s1">'2.1.0'</span>
+<span class="n">gem</span> <span class="s1">'letsencrypt-rails-heroku'</span><span class="p">,</span> <span class="s1">'1.2.0'</span>
+
+<span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'sqlite3'</span><span class="p">,</span> <span class="s1">'1.3.13'</span>
+  <span class="n">gem</span> <span class="s1">'byebug'</span><span class="p">,</span> <span class="ss">platforms: </span><span class="p">[</span><span class="ss">:mri</span><span class="p">,</span> <span class="ss">:mingw</span><span class="p">,</span> <span class="ss">:x64_mingw</span><span class="p">]</span>
+  <span class="n">gem</span> <span class="s1">'capybara'</span><span class="p">,</span> <span class="s1">'~&gt; 2.13'</span>
+  <span class="n">gem</span> <span class="s1">'selenium-webdriver'</span>
+<span class="k">end</span>
+
+<span class="n">group</span> <span class="ss">:development</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'web-console'</span><span class="p">,</span> <span class="s1">'3.5.1'</span>
+  <span class="n">gem</span> <span class="s1">'listen'</span><span class="p">,</span> <span class="s1">'3.1.5'</span>
+  <span class="n">gem</span> <span class="s1">'spring'</span><span class="p">,</span> <span class="s1">'2.0.2'</span>
+  <span class="n">gem</span> <span class="s1">'spring-watcher-listen'</span><span class="p">,</span> <span class="s1">'2.0.1'</span>
+<span class="k">end</span>
+
+<span class="n">group</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'rails-controller-testing'</span><span class="p">,</span><span class="s1">'1.0.2'</span>
+  <span class="n">gem</span> <span class="s1">'minitest-reporters'</span><span class="p">,</span><span class="s1">'1.1.14'</span>
+  <span class="n">gem</span> <span class="s1">'guard'</span><span class="p">,</span><span class="s1">'2.13.0'</span>
+  <span class="n">gem</span> <span class="s1">'guard-minitest'</span><span class="p">,</span><span class="s1">'2.4.4'</span>
+<span class="k">end</span>
+
+<span class="n">group</span> <span class="ss">:production</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'pg'</span><span class="p">,</span><span class="s1">'0.20.0'</span>
+<span class="k">end</span>
+
+<span class="n">gem</span> <span class="s1">'tzinfo-data'</span><span class="p">,</span> <span class="ss">platforms: </span><span class="p">[</span><span class="ss">:mingw</span><span class="p">,</span> <span class="ss">:mswin</span><span class="p">,</span> <span class="ss">:x64_mingw</span><span class="p">,</span> <span class="ss">:jruby</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>5° 使用<code class="highlighter-rouge">bundle install</code>命令或者<code class="highlighter-rouge">bundle update</code>命令安装这些gem.</p>
+<div class="ques">
+  [Q1:  bundle install和bundle build的区别]
+</div>
+
+<p>6° 运行Rails服务器:</p>
+
+<p><code class="highlighter-rouge">rails server</code></p>
+
+<p>本地服务器默认地址为 http://0.0.0.0:3000</p>
+
+<p>执行rails server命令后看到的</p>
+
+<p><img src="/assets/images/posts/1-01.png" alt="1-01" class="post-r-img" /></p>
+
+<h4 id="2-版本控制">2. 版本控制</h4>
+
+<h5 id="第一次使用仓库前的操作">第一次使用仓库前的操作:</h5>
+
+<p>1° 初始化仓库:</p>
+
+<p><code class="highlighter-rouge">$ git init</code></p>
+
+<p>2° 跟踪所有项目文件</p>
+
+<p><code class="highlighter-rouge">$ git add -A</code></p>
+
+<p>3° 提交到本地仓库</p>
+
+<p><code class="highlighter-rouge">$ git commit -m "Initialize repository and First commit"</code></p>
+
+<p>4° 设置远程仓库</p>
+
+<p><code class="highlighter-rouge">$ git remote add origin https://github.com/leonmin/yag-rails-blog.git</code></p>
+
+<p>5° 推送到远程仓库:</p>
+
+<p><code class="highlighter-rouge">$ git push -u origin master</code></p>
+
+<p>还可以使用<code class="highlighter-rouge">git status</code>查看当前文件状态.</p>
+<div class="ques">
+  [Q2: git status简单使用]
+</div>
+
+<h4 id="3-使用heroku部署">3. 使用Heroku部署</h4>
+
+<p>1° 检查Gemfile文件是否有以下gem:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'sqlite3'</span><span class="p">,</span> <span class="s1">'1.3.13'</span>
+  <span class="o">...</span>
+<span class="k">end</span>
+
+<span class="n">group</span> <span class="ss">:production</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'pg'</span><span class="p">,</span> <span class="s1">'0.20.0'</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>2° 安装gem,使用<code class="highlighter-rouge">--without production</code>禁止本地环境安装生产环境使用的gem(即pg):</p>
+
+<p><code class="highlighter-rouge">$ bundle install --without production</code></p>
+
+<p>3° <a href="https://signup.heroku.com/login">注册Heroku账号</a><font color="#ccc">(可能需要科学上网)</font></p>
+
+<p>4° 安装heroku-cli</p>
+
+<p>5° 使用heroku命令登录账号:</p>
+
+<p><code class="highlighter-rouge">$ heroku login</code>  这里需要输入邮箱和密码,即上面注册时使用的邮箱密码.</p>
+
+<p>然后添加SSH密钥:</p>
+
+<p><code class="highlighter-rouge">$ heroku keys:add</code></p>
+
+<p>6° 在Heroku中创建一个项目:</p>
+
+<p><code class="highlighter-rouge">$ heroku create</code></p>
+
+<p>Heroku会为应用分配两个地址:</p>
+
+<p>一个二级域名(比如:https://arcane-cliffs-18573.herokuapp.com/),即应用部署的地址;</p>
+
+<p>一个git仓库地址(比如:https://git.heroku.com/arcane-cliffs-18573.git),这个仓库用于把本地仓库部署到heroku仓库上,heroku仓库远程仓库名默认为heroku.</p>
+
+<p>7° 部署应用</p>
+
+<p><code class="highlighter-rouge">$ git push heroku master</code></p>
+
+<p>8° 查看页面</p>
+
+<p>可以使用Heroku为应用分配的二级域名访问,也可使用<code class="highlighter-rouge">heroku open</code>命令访问部署后的页面.</p>
+
+<p>(PS:此时项目还没有内容,可能会显示找不到页面)</p>
+
+<p>9° heroku命令</p>
+
+<p><code class="highlighter-rouge">$ heroku rename yag-rails-blog</code>  重命名应用</p>
+
+<p><code class="highlighter-rouge">$ heroku logs</code>  查看最新日志</p>
+
+<hr />
+
+<div class="ques">
+  [Q1: bundle install和bundle build的区别]
+</div>
+<div class="ans">
+  [K1: 检查源]
+</div>
+<p>A: <code class="highlighter-rouge">bundle update</code> 会去相应的源检查Gemfile里的gem更新,然后对比Gemfile.lock文件,如果Gemfile里没有指定的版本或是<code class="highlighter-rouge">&gt;=</code>版本就会去相应的源下载安装新版本gem,然后更新Gemfile.lock文件;</p>
+
+<p><code class="highlighter-rouge">bundle install</code> 会先检查Gemfile.lock文件以及相关依赖,然后为本地系统安装Gemfile.lock文件中指定的版本,接着检查Gemfile中有而Gemfile.lock中没有的,然后安装,不会去检查相关源的Gem版本更新.</p>
+
+<p>一般不建议使用<code class="highlighter-rouge">bundle update</code>,可以使用<code class="highlighter-rouge">bundle install</code>或者<code class="highlighter-rouge">bundle update gem_name</code>.</p>
+
+<div class="ques">
+  [Q2: git status简单使用]
+</div>
+<div class="ans">
+  [K2: git status -s]
+</div>
+<p>A: 1.使用<code class="highlighter-rouge">git status</code> 会显示以下信息:</p>
+
+<p>1° <code class="highlighter-rouge">nothing to commit,working directory clean</code>  表示所有跟踪文件上次提交后都未被更改过;</p>
+
+<p>2° <code class="highlighter-rouge">Untracked files:..</code>  列出文件未被跟踪;</p>
+
+<p>3° <code class="highlighter-rouge">Changes to be committed:..</code>  列出文件被跟踪,且处于暂存状态;</p>
+
+<p>4° <code class="highlighter-rouge">Changes not staged for commit:..</code>  已跟踪的文件的内容发生变化,但还没有放到暂存区;</p>
+
+<p>2.使用<code class="highlighter-rouge">git status -s/--short</code>查看简洁的状态信息</p>
+
+<p>1° <code class="highlighter-rouge">??</code>  未跟踪的文件</p>
+
+<p>2° <code class="highlighter-rouge">A-</code>  新添加到暂存区的文件</p>
+
+<p>3° <code class="highlighter-rouge">M-</code>  文件被修改并放到了暂存区</p>
+
+<p>4° <code class="highlighter-rouge">-M</code>  文件被修改了但还没有放到暂存区</p>
+
+<p>5° <code class="highlighter-rouge">MM</code>  文件被修改并且提交到暂存区后又被修改了</p>
+
+
+  </section>
+  <footer class="post-footer">
+    
+<div class="post-f-nav" id="post-nav-id">
+  <div class="post-f-nav-next post-f-nav-item">
+    
+    <a href="/ruby/2018/02/28/rails-blog-models.html" rel="next" title="Ruby on Rails(添加用户和微博对象)">
+      <i class="fa fa-chevron-left"></i> Ruby on Rails(添加用户和微博对象)
+    </a>
+    
+  </div>
+  <span class="post-nav-divider"></span>
+  <div class="post-f-nav-prev post-f-nav-item">
+    
+    <a href="/limi/2017/12/04/tool-01.html" rel="prev" title="位置阅读指示器">
+      位置阅读指示器
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+  </footer>
+</article>
+</section>
+
+
+    </main>
+    <footer id="footer">
+  <div class="move-btn">
+	<div class="move-con">
+		<div class="circleProgress_wrapper">
+			<div class="wrapper right">
+				<div class="circleProgress rightcircle"></div>
+			</div>
+			<div class="wrapper left">
+				<div class="circleProgress leftcircle"></div>
+			</div>
+		</div>
+		<div class="circle"></div>
+		<div class="arrow arrow-hit">
+			<i class="fa fa-lg fa-chevron-down"></i>
+		</div>
+	</div>
+</div>
+  <div class="contact-list">
+    <div class="contact">
+      <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
+      <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="friend-link">
+      <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt=""></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/simple-jekyll-search.js"></script>
+  <script src="/assets/js/limon.js"></script>
+</body>
+</html>

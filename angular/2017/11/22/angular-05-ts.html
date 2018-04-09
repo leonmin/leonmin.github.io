@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/site/favicon.ico">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+  <div class="head-line"></div>
+<progress value="0" id="head-progress" class="flat"></progress>
+  <div id="head-title"><a href="/">LEONMIN</a></div>
+  <div class="head-brand">
+    <div id="head-back">
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <div id="head-search">
+      <div id="head-search-btn">
+  <i class="fa fa-search"></i>
+</div>
+<div id="head-mask"></div>
+<div id="head-search-contain">
+  <div class="search">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input type="text" id="search-input" placeholder="Searching.." class="search-input">
+    </div>
+    <span class="search-close-icon">
+      <i class="fa fa-times-circle-o"></i>
+    </span>
+  </div>
+  <div class="search-result">
+    <div id="results-container"></div>
+  </div>
+</div>
+    </div>
+    <div id="head-menu">
+      <div class="head-menu-btn">
+    <p class="drawer-hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </p>
+  </div>
+<nav id="head-menu-contain">
+  <h2>MENU</h2>
+  <ul class="site-ham-list">
+    <li>
+      <a href="/">LIMI</a>
+    </li>
+    <li>
+      <a href="/archive/">ARCHIVE</a>
+    </li>
+    <li>
+      <a href="/tags/">TAGS</a>
+    </li>
+    <li>
+      <a href="/about/">ABOUT</a>
+    </li>
+  </ul>
+  <dl class="site-ham-item">
+    <dt>TEL</dt>
+    <dd>
+      <a href="tel:097-547-9781">Tel.184-8360-0000</a>
+    </dd>
+    <dt>CONNECT</dt>
+    <div class="aside-content">
+      <span>
+        <a href="http://weibo.com/leonmin" target="_blank">
+          <i class="fa fa-weibo fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://github.com/leonmin" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://twitter.com/leonminnn" target="_blank">
+          <i class="fa fa-twitter fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href=" /feed.xml ">
+          <i class="fa fa-rss fa-3x"></i>
+        </a>
+      </span>
+    </div>
+  </dl>
+</nav>
+
+    </div>
+  </div>
+</header>
+    <main class="main">
+      
+<section id="posts">
+    
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/angular/2017/11/22/angular-05-ts.html">Angular-5-TypeScirpt</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年11月22日</span>
+        <span class="post-cate"><a href="/category/angular/" title="Angular">Angular</a></span>
+      </div>
+  </header>
+  <section class="post-content">
+    <h4 id="1-angular是用typescript构建的">1. Angular是用TypeScript构建的</h4>
+
+<p>TypeScript并不是一门全新的语言,而是ES6的超集.所有的ES6代码都是完全可以编译的TypeScript代码.</p>
+
+<h4 id="2-typescript特性">2. TypeScript特性</h4>
+
+<p>(1) 类型</p>
+
+<p>(2) 类</p>
+
+<p>(3) 注解</p>
+
+<p>(4) 模块导入</p>
+
+<p>(5) 语言工具包</p>
+
+<!-- more -->
+
+<h4 id="3-类型">3. 类型</h4>
+
+<p>顾名思义,相对于ES6,TypeScript最大的改善是增加了类型系统.</p>
+
+<p>类型检查的优点:</p>
+
+<p>(1) 有助于代码的编码,因为它可以在编译期预防bug;</p>
+
+<p>(2) 有助于代码的阅读,因为它可以清晰地表明你的意图.</p>
+
+<p>TypeScript中的类型是可选的,如写快速或功能原型,可以先省略类型,然后在随着代码日趋成熟逐渐加上类型.</p>
+
+<p>TypeScript的新语法是从ES5自然演化而来的,仍沿用var来定义变量,但现在可以同时为变量名提供可选的变量类型.</p>
+
+<p><code class="highlighter-rouge">var name: string</code></p>
+
+<p>在声明函数时,也可以为函数参数和返回值指定类型:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">greetText</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nx">string</span><span class="p">{</span>
+  <span class="k">return</span> <span class="s2">"Hello "</span><span class="o">+</span> <span class="nx">name</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>greetText函数在括号后还有一个新语法<code class="highlighter-rouge">: string</code>.冒号之后指定的是该函数的返回值类型.这很有用,因为当让函数返回一个非string型的返回值,编译器就会告诉我们这里有错误;使用该函数的开发人员也能很清楚自己将会拿到什么类型的数据.</p>
+
+<p><strong>尝试REPL</strong></p>
+
+<p>安装一个小工具,名为TSUN(TypeScript Upgraded Node,支持TypeScript的升级版Node):</p>
+
+<p><code class="highlighter-rouge">$ npm install -g tsun</code></p>
+
+<p>启动:</p>
+
+<p><code class="highlighter-rouge">$ tsun</code></p>
+
+<h4 id="4-内置类型">4. 内置类型</h4>
+
+<p>(1) 字符串</p>
+
+<p>字符串包含文本,声明为string类型:</p>
+
+<p><code class="highlighter-rouge">var name: string = 'Filpe';</code></p>
+
+<p>(2) 数字</p>
+
+<p>在TypeScript中所有的数字都是用浮点数表示的,类型是number:</p>
+
+<p><code class="highlighter-rouge">var age: number = 36;</code></p>
+
+<p>(3) 布尔类型</p>
+
+<p><code class="highlighter-rouge">var married: boolean = true;</code></p>
+
+<p>(4) 数组</p>
+
+<p>可以使用Array<type>或者type[]语法来指定元素类型:</type></p>
+
+<p><code class="highlighter-rouge">var jobs: Array&lt;string&gt; = ['IBM','Microsoft'];</code></p>
+
+<p><code class="highlighter-rouge">var jobs: string[] =['Apple','Dell'];</code></p>
+
+<p>(5) 枚举</p>
+
+<p>枚举是一组可命名数组的集合:</p>
+
+<p><code class="highlighter-rouge">enum Role {Employee = 0,Manager,Admin};</code></p>
+
+<p><code class="highlighter-rouge">var role: Role = Role.Employee;</code></p>
+
+<p>默认情况下,枚举类型的初始值为0.</p>
+
+<p>(6) 任意类型</p>
+
+<p>如果没有为变量指定类型,那它的默认类型就是any.在TypeScript中,any类型的变量能够接收任意类型的数据:</p>
+
+<p><code class="highlighter-rouge">var something: any = 'as string';</code></p>
+
+<p><code class="highlighter-rouge">something = 1</code></p>
+
+<p>(7) “无”类型</p>
+
+<p>void意味着我们不期望那里有类型.它通常作为函数的返回值,表示没有任何返回值:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="k">void</span><span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h4 id="5-类">5. 类</h4>
+
+<p>JavaScript ES5采用基于原型的面向对象设计.在ES6中,有内置的类.使用class关键字定义一个类,紧随其后的是类名和代码块:</p>
+
+<p><code class="highlighter-rouge">class vehicle{}</code></p>
+
+<p>类可以包含属性,方法以及构造函数.</p>
+
+<p>(1) 属性</p>
+
+<p>属性定义了类实例对象的数据.类中的每个属性都可以包含一个可选的类型.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Person</span><span class="p">{</span>
+  <span class="nl">first_name</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="nl">age</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>(2) 方法</p>
+
+<p>方法时运行在类对象实例上下文中的函数.在调用对象的方法前,必须要有这个对象的实例.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Person</span><span class="p">{</span>
+  <span class="nl">name</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="nl">age</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+  <span class="nx">greet</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">,</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>如果没有显式声明过方法的返回类型和返回值,就会假定它可能返回任何东西(即any类型).这了没有任何显式的return语句,所以实际返回的类型是void.</p>
+
+<p>注意:void类型也是一种合法的any类型.</p>
+
+<p>调用greet方法前,需要实例化一个Person类的实例对象:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">p</span> <span class="p">:</span><span class="nx">Person</span><span class="p">;</span>
+<span class="nx">p</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">();</span>
+<span class="nx">p</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">'Felipe'</span><span class="p">;</span>
+<span class="nx">p</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>(3) 构造函数</p>
+
+<p>构造函数时当类进行实例化时执行的特殊函数.通常会在构造函数中对新对象进行初始化工作.</p>
+
+<p>构造函数必须命名为constructor.因为构造函数是在类被实例化时调用的,所以它们可以有输入参数,但不能有返回值.</p>
+
+<p>当类没有显示地定义构造函数时,将自动创建一个无参数构造函数.</p>
+
+<p>在ES6中,一个类可以拥有不同参数数量的多个构造函数重载实现.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Person</span><span class="p">{</span>
+  <span class="p">...</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx">stirng</span><span class="p">,</span><span class="nx">age</span><span class="p">:</span> <span class="nx">number</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">...</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">p</span><span class="p">:</span> <span class="nx">Person</span><span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">'Felipe'</span><span class="p">,</span><span class="mi">23</span><span class="p">);</span>
+<span class="nx">p</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>(4) 继承</p>
+
+<p>继承表明子类能够从父类得到它的行为.然后在这个子类重写,修改以及添加行为.</p>
+
+<p>继承时TypeScript的核心语法,用extends关键字实现:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Report</span><span class="p">{</span>
+  <span class="nl">data</span><span class="p">:</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">data</span> <span class="o">=</span> <span class="nx">data</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nx">run</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">line</span><span class="p">){</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>​</p>
+
+
+  </section>
+  <footer class="post-footer">
+    
+<div class="post-f-nav" id="post-nav-id">
+  <div class="post-f-nav-next post-f-nav-item">
+    
+    <a href="/javascript/2017/11/23/javascript-dp-03.html" rel="next" title="JavaScript设计模式--代理模式">
+      <i class="fa fa-chevron-left"></i> JavaScript设计模式--代理模式
+    </a>
+    
+  </div>
+  <span class="post-nav-divider"></span>
+  <div class="post-f-nav-prev post-f-nav-item">
+    
+    <a href="/ruby/2017/11/19/ruby-on-rails-01.html" rel="prev" title="Ruby on Rails(从零开始)">
+      Ruby on Rails(从零开始)
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+  </footer>
+</article>
+</section>
+
+
+    </main>
+    <footer id="footer">
+  <div class="move-btn">
+	<div class="move-con">
+		<div class="circleProgress_wrapper">
+			<div class="wrapper right">
+				<div class="circleProgress rightcircle"></div>
+			</div>
+			<div class="wrapper left">
+				<div class="circleProgress leftcircle"></div>
+			</div>
+		</div>
+		<div class="circle"></div>
+		<div class="arrow arrow-hit">
+			<i class="fa fa-lg fa-chevron-down"></i>
+		</div>
+	</div>
+</div>
+  <div class="contact-list">
+    <div class="contact">
+      <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
+      <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="friend-link">
+      <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt=""></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/simple-jekyll-search.js"></script>
+  <script src="/assets/js/limon.js"></script>
+</body>
+</html>

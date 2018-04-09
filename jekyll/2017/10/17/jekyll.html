@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/site/favicon.ico">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+  <div class="head-line"></div>
+<progress value="0" id="head-progress" class="flat"></progress>
+  <div id="head-title"><a href="/">LEONMIN</a></div>
+  <div class="head-brand">
+    <div id="head-back">
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <div id="head-search">
+      <div id="head-search-btn">
+  <i class="fa fa-search"></i>
+</div>
+<div id="head-mask"></div>
+<div id="head-search-contain">
+  <div class="search">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input type="text" id="search-input" placeholder="Searching.." class="search-input">
+    </div>
+    <span class="search-close-icon">
+      <i class="fa fa-times-circle-o"></i>
+    </span>
+  </div>
+  <div class="search-result">
+    <div id="results-container"></div>
+  </div>
+</div>
+    </div>
+    <div id="head-menu">
+      <div class="head-menu-btn">
+    <p class="drawer-hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </p>
+  </div>
+<nav id="head-menu-contain">
+  <h2>MENU</h2>
+  <ul class="site-ham-list">
+    <li>
+      <a href="/">LIMI</a>
+    </li>
+    <li>
+      <a href="/archive/">ARCHIVE</a>
+    </li>
+    <li>
+      <a href="/tags/">TAGS</a>
+    </li>
+    <li>
+      <a href="/about/">ABOUT</a>
+    </li>
+  </ul>
+  <dl class="site-ham-item">
+    <dt>TEL</dt>
+    <dd>
+      <a href="tel:097-547-9781">Tel.184-8360-0000</a>
+    </dd>
+    <dt>CONNECT</dt>
+    <div class="aside-content">
+      <span>
+        <a href="http://weibo.com/leonmin" target="_blank">
+          <i class="fa fa-weibo fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://github.com/leonmin" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href="https://twitter.com/leonminnn" target="_blank">
+          <i class="fa fa-twitter fa-3x"></i>
+        </a>
+      </span>
+      <span>
+        <a href=" /feed.xml ">
+          <i class="fa fa-rss fa-3x"></i>
+        </a>
+      </span>
+    </div>
+  </dl>
+</nav>
+
+    </div>
+  </div>
+</header>
+    <main class="main">
+      
+<section id="posts">
+    
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-h-title">
+      <a href="/jekyll/2017/10/17/jekyll.html">Jekyll环境配置</a>
+    </h1>
+    <div class="post-meta">
+        <span class="post-date">2017年10月17日</span>
+        <span class="post-cate"><a href="/category/jekyll/" title="Jekyll">Jekyll</a></span>
+      </div>
+  </header>
+  <section class="post-content">
+    <h4 id="1-安装rvm-">1. 安装RVM <br /></h4>
+<p>安装RVM: <br />
+	<code class="highlighter-rouge">$ curl -L get.rvm.in | bash -s stable</code><br />
+  指定源:<br />
+  <code class="highlighter-rouge">$ source ~/.rvm/scripts/rvm</code><br />
+  查看版本:<br />
+  <code class="highlighter-rouge">$ rvm -v</code><br /></p>
+
+<h4 id="2-安装ruby">2. 安装Ruby<br /></h4>
+<p>查看已知版本:<br />
+  <code class="highlighter-rouge">$ rvm list known</code><br />
+  安装Ruby:<br />
+  <code class="highlighter-rouge">$ rvm install 2.4.2</code><br />
+<!-- more -->
+  切换Ruby版本:<br />
+  <code class="highlighter-rouge">$ rvm use 2.4.2  - - default</code><br />
+  查询已经安装的版本:<br />
+  <code class="highlighter-rouge">$ rvm list</code><br />
+  卸载一个已经安装版本:<br />
+  <code class="highlighter-rouge">$ rvm remove 2.3.0</code><br /></p>
+
+<h4 id="3-安装更新gem">3. 安装(更新)gem<br /></h4>
+<p>添加国内镜像:<br />
+  <code class="highlighter-rouge">$ gem sources -a https://gems.ruby-china.org/</code><br />
+  删除国外镜像:<br />
+  <code class="highlighter-rouge">$ gem sources -r https://rubygems.org</code><br />
+  更新版本:<br />
+  <code class="highlighter-rouge">$ sudo gem update - -system</code><br />
+  查看版本:<br />
+  <code class="highlighter-rouge">$ gem -v</code><br /></p>
+
+<h4 id="4-安装jekyll">4. 安装Jekyll<br /></h4>
+<p>安装jekyll:<br />
+  <code class="highlighter-rouge">$ sudo gem install jekyll</code><br />
+  查看版本:<br />
+  <code class="highlighter-rouge">$ jekyll -v</code><br />
+  查看帮助:<br />
+  <code class="highlighter-rouge">$ jekyll _3.6.0_ help</code><br /></p>
+
+<h4 id="6-安装bundler">6. 安装bundler<br /></h4>
+<p>安装bundler:<br />
+  <code class="highlighter-rouge">$ gem install bundler</code><br />
+  查看版本:<br />
+  <code class="highlighter-rouge">$ bundler -v</code><br /></p>
+
+<h4 id="7-安装homebrew">7. 安装homebrew<br /></h4>
+<p>安装homebrew:<br />
+  <code class="highlighter-rouge">$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”;</code><br />
+  查看版本:<br />
+  <code class="highlighter-rouge">$ brew -v</code><br /></p>
+
+<h4 id="8--安装openssl">8.  安装openssl<br /></h4>
+<p>查看openssl的版本和目录:<br />
+  <code class="highlighter-rouge">$ openssl version</code><br />
+  <code class="highlighter-rouge">$ which openssl</code><br />
+  更新homebrew:<br />
+  <code class="highlighter-rouge">$ brew update</code><br />
+  通过homeberw安装openssl:<br />
+  <code class="highlighter-rouge">$ brew install openssl</code><br />
+  将openssl软链到/usr/local/bin/openssl:<br />
+  <code class="highlighter-rouge">$ ln -s /usr/local/Cellar/openssl/1.0.2l/bin/openssl /usr/local/bin/openssl</code><br />
+  查看版本:<br />
+  <code class="highlighter-rouge">$ openssl version</code><br /></p>
+
+
+  </section>
+  <footer class="post-footer">
+    
+<div class="post-f-nav" id="post-nav-id">
+  <div class="post-f-nav-next post-f-nav-item">
+    
+    <a href="/angular/2017/11/17/angular-start.html" rel="next" title="Angular-0-环境配置">
+      <i class="fa fa-chevron-left"></i> Angular-0-环境配置
+    </a>
+    
+  </div>
+  <span class="post-nav-divider"></span>
+  <div class="post-f-nav-prev post-f-nav-item">
+    
+    <a href="/life/2016/12/08/peom-002.html" rel="prev" title="浪淘沙慢 柳永">
+      浪淘沙慢 柳永
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+  </footer>
+</article>
+</section>
+
+
+    </main>
+    <footer id="footer">
+  <div class="move-btn">
+	<div class="move-con">
+		<div class="circleProgress_wrapper">
+			<div class="wrapper right">
+				<div class="circleProgress rightcircle"></div>
+			</div>
+			<div class="wrapper left">
+				<div class="circleProgress leftcircle"></div>
+			</div>
+		</div>
+		<div class="circle"></div>
+		<div class="arrow arrow-hit">
+			<i class="fa fa-lg fa-chevron-down"></i>
+		</div>
+	</div>
+</div>
+  <div class="contact-list">
+    <div class="contact">
+      <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
+      <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="friend-link">
+      <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt=""></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/simple-jekyll-search.js"></script>
+  <script src="/assets/js/limon.js"></script>
+</body>
+</html>
