@@ -34,282 +34,132 @@
   padding: 0;
   margin: 0; }
 
-div[class^="language-"] {
-  color: black;
-  text-shadow: 0 1px white;
-  font-family: Monaco, Consolas, 'Andale Mono', monospace;
-  direction: ltr;
-  word-spacing: normal;
-  tab-size: 2;
-  hyphens: none;
+pre, .highlight {
+  overflow: auto;
+  margin: 15px 0;
+  padding: 0;
   font-size: 13px;
-  overflow-x: auto;
-  border: dashed 2px #ccc;
-  padding: 10px;
-  word-wrap: break-word;
-  line-height: 24px; }
+  color: #444;
+  background: #fff;
+  line-height: 1.6; }
 
-.highlight {
-  border: none;
-  color: #000;
-  font-family: Monaco, Consolas, 'Andale Mono', monospace; }
+pre, code {
+  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace; }
 
-pre {
-  font-size: 13px;
-  line-height: 16px;
-  position: relative;
-  margin: 0;
-  padding: .8em;
-  color: #000;
-  background-color: transparent; }
-
-code.highlighter-rouge {
-  padding: 2px 4px;
+code {
+  padding: 4px 5px;
   word-wrap: break-word;
   color: #555;
   background: #eee;
   border-radius: 3px;
   font-size: 13px; }
 
-.lineno {
-  padding-right: 24px;
-  color: #8f908a; }
+pre code {
+  padding: 0;
+  color: #333;
+  background: none;
+  text-shadow: none; }
 
-.hll {
-  background-color: #49483e; }
+.highlight {
+  border-radius: 1px;
+  border: .12em dashed #ccc; }
+  .highlight pre {
+    border: none;
+    margin: 0;
+    padding: 15px 0; }
+  .highlight > pre {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff; }
+  .highlight table {
+    margin: -10px;
+    width: auto;
+    border: none; }
+  .highlight td {
+    border: none;
+    padding: 0; }
+  .highlight figcaption {
+    font-size: 1em;
+    color: #555;
+    line-height: 1em;
+    margin-bottom: 1em; }
+    .highlight figcaption:before, .highlight figcaption:after {
+      content: " ";
+      display: table; }
+    .highlight figcaption:after {
+      clear: both; }
+    .highlight figcaption a {
+      float: right;
+      color: #555; }
+      .highlight figcaption a:hover {
+        border-bottom-color: #555; }
+  .highlight .code pre {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f7f7f7; }
+  .highlight .line {
+    height: 20px; }
 
-.c {
-  color: slategray; }
+.gist table {
+  width: auto; }
+  .gist table td {
+    border: none; }
 
-/* Comment 注释 */
-.err {
-  color: deeppink; }
+pre.highlight {
+  padding: 15px; }
 
-/* Error 错误*/
-.k {
-  color: #07a; }
-
-/* Keyword 关键字*/
-.l {
-  color: #ae81ff; }
-
-/* Literal */
-.n {
-  color: #555; }
-
-/* Name */
-.o {
+pre .c, pre .cm, pre .cp, pre .c1, pre .cs {
+  color: #8e908c; }
+pre .nv, pre .vc, pre .vg, pre .vi,
+pre .na,
+pre .nt,
+pre .sr,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #333; }
+pre .m, pre .mf, pre .mh, pre .mi, pre .il, pre .mo, pre .mx, pre .mb,
+pre .cp,
+pre .nb, pre .bp,
+pre .l, pre .ld,
+pre .params,
+pre .kc,
+pre .gp {
+  color: #ff502c; }
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .s, pre .sb, pre .sc, pre .sd, pre .s2, pre .se, pre .sh, pre .si, pre .sx, pre .s1, pre .ss,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata,
+pre .special,
+pre .m, pre .mf, pre .mh, pre .mi, pre .il, pre .mo, pre .mx, pre .mb,
+pre .formula {
+  color: #d14; }
+pre .nc, pre .nf,
+pre .css .hexcolor {
+  color: #333; }
+pre .nf,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
   color: #444; }
+pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt,
+pre .javascript .function {
+  color: #0086b3; }
 
-/* Operator 运算符*/
-.p {
-  color: #999; }
-
-/* Punctuation 标点符号*/
-.cm {
-  color: #75715e; }
-
-/* Comment.Multiline */
-.cp {
-  color: #75715e; }
-
-/* Comment.Preproc */
-.c1 {
-  color: slategray; }
-
-/* Comment.Single */
-.cs {
-  color: #75715e; }
-
-/* Comment.Special */
-.ge {
-  font-style: italic; }
-
-/* Generic.Emph */
-.gs {
-  font-weight: bold; }
-
-/* Generic.Strong */
-.kc {
-  color: #905; }
-
-/* Keyword.Constant */
-.kd {
-  color: #07a; }
-
-/* Keyword.Declaration 声明*/
-.kn {
-  color: #f92672; }
-
-/* Keyword.Namespace */
-.kp {
-  color: #66d9ef; }
-
-/* Keyword.Pseudo */
-.kr {
-  color: #0b5394; }
-
-/* Keyword.Reserved 保留关键字*/
-.kt {
-  color: #66d9ef; }
-
-/* Keyword.Type */
-.ld {
-  color: #e6db74; }
-
-/* Literal.Date */
-.m {
-  color: black; }
-
-/* Literal.Number 数字*/
-.s {
-  color: #07a; }
-
-/* Literal.String 字符串 */
-.na {
-  color: #690; }
-
-/* Name.Attribute 属性名 */
-.nb {
-  color: #905; }
-
-/* Name.Builtin 内键指令 */
-.nc {
-  color: #07a; }
-
-/* Name.Class 类名*/
-.no {
-  color: black; }
-
-/* Name.Constant 常量*/
-.nd {
-  color: #444; }
-
-/* Name.Decorator 装饰*/
-.ni {
-  color: #f8f8f2; }
-
-/* Name.Entity */
-.ne {
-  color: #a6e22e; }
-
-/* Name.Exception */
-.nf {
-  color: black; }
-
-/* Name.Function */
-.nl {
-  color: #905; }
-
-/* Name.Label 标签*/
-.nn {
-  color: #008f68; }
-
-/* Name.Namespace */
-.nx {
-  color: black; }
-
-/* Name.Other 其他*/
-.py {
-  color: #f8f8f2; }
-
-/* Name.Property */
-.nt {
-  color: #905; }
-
-/* Name.Tag 标签名*/
-.nv {
-  color: #f8f8f2; }
-
-/* Name.Variable */
-.ow {
-  color: #f92672; }
-
-/* Operator.Word */
-.w {
-  color: #f8f8f2; }
-
-/* Text.Whitespace */
-.mf {
-  color: #ae81ff; }
-
-/* Literal.Number.Float */
-.mh {
-  color: #ae81ff; }
-
-/* Literal.Number.Hex */
-.mi {
-  color: #905; }
-
-/* Literal.Number.Integer */
-.mo {
-  color: #ae81ff; }
-
-/* Literal.Number.Oct */
-.sb {
-  color: #e6db74; }
-
-/* Literal.String.Backtick */
-.sc {
-  color: #e6db74; }
-
-/* Literal.String.Char */
-.sd {
-  color: #e6db74; }
-
-/* Literal.String.Doc */
-.s2 {
-  color: #690; }
-
-/* Literal.String.Double */
-.se {
-  color: rebeccapurple; }
-
-/* Literal.String.Escape */
-.sh {
-  color: #e6db74; }
-
-/* Literal.String.Heredoc */
-.si {
-  color: #999; }
-
-/* Literal.String.Interpol */
-.sx {
-  color: #e6db74; }
-
-/* Literal.String.Other */
-.sr {
-  color: darkorange; }
-
-/* Literal.String.Regex */
-.s1 {
-  color: #690; }
-
-/* Literal.String.Single 字符*/
-.ss {
-  color: #905; }
-
-/* Literal.String.Symbol 标量*/
-.bp {
-  color: #555; }
-
-/* Name.Builtin.Pseudo */
-.vc {
-  color: #555; }
-
-/* Name.Variable.Class */
-.vg {
-  color: #555; }
-
-/* Name.Variable.Global */
-.vi {
-  color: #555; }
-
-/* Name.Variable.Instance */
-.il {
-  color: #ae81ff; }
-
-/* Literal.Number.Integer.Long */
 table {
   margin: 20px 0;
   width: 100%;
@@ -729,12 +579,14 @@ progress::-webkit-progress-bar {
   .post-header .post-meta {
     margin: 25px 0 10px; }
     .post-header .post-meta .post-date {
-      font-size: .9em; }
+      font-size: 1em;
+      color: #888;
+      font-weight: 320; }
     .post-header .post-meta .post-cate {
-      padding: 1px 4px;
+      padding: 2px 6px;
       border: 1px solid #888;
       display: inline-block;
-      border-radius: 5px; }
+      border-radius: 4px; }
       .post-header .post-meta .post-cate:hover {
         border: 1px solid #333; }
       .post-header .post-meta .post-cate:hover a {
@@ -742,9 +594,57 @@ progress::-webkit-progress-bar {
       .post-header .post-meta .post-cate a {
         color: #888; }
 
-.index-post h1 {
+.index-post h1, .archive-post h1 {
   border-bottom: 1px solid #000; }
 
+.post-content h4 {
+  display: block;
+  height: 32px;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 32px;
+  padding-left: 40px;
+  border: 1px solid #888;
+  position: relative;
+  margin: 7px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+  @media (max-width: 414px) {
+    .post-content h4 {
+      font-size: 1em; } }
+  .post-content h4::after {
+    content: "H";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background: #888;
+    color: #fff;
+    text-align: center; }
+.post-content h5 {
+  display: inline-block;
+  height: 24px;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 24px;
+  position: relative;
+  word-break: break-all;
+  margin: 5px 0;
+  padding-left: 22px;
+  text-decoration: underline #999; }
+  @media (max-width: 414px) {
+    .post-content h5 {
+      font-size: 1em; } }
+  .post-content h5::after {
+    content: "";
+    position: absolute;
+    top: 4.5px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    background: #888; }
 .post-content p {
   line-height: 28px;
   margin: 10px 0; }
@@ -1031,10 +931,12 @@ progress::-webkit-progress-bar {
       #footer .contact-list .contact .fa-instagram {
         color: #ff3366; }
     #footer .contact-list .friend-link {
-      height: 25px;
+      height: 35px;
       width: 100%; }
       #footer .contact-list .friend-link img {
-        height: 100%; }
+        height: 80%; }
+      #footer .contact-list .friend-link .friend-link-site {
+        height: 120%; }
 
 .container {
   position: relative;
@@ -1060,11 +962,15 @@ progress::-webkit-progress-bar {
   position: relative;
   margin: 10px 0;
   width: 100%; }
-  .note h4 {
-    font-size: 1em;
+  .note h3 {
+    font-size: 1.2em;
+    font-weight: 350;
     padding: 3px 20px;
     line-height: 32px;
     display: block; }
+    @media (max-width: 414px) {
+      .note h3 {
+        font-size: 1em; } }
   .note span {
     letter-spacing: 1px;
     margin: 0;
@@ -1082,7 +988,7 @@ progress::-webkit-progress-bar {
 
 .info::before {
   background: #5fcf80; }
-.info h4:hover {
+.info h3:hover {
   background: #5fcf80;
   color: #fff; }
 .info span {
@@ -1090,7 +996,7 @@ progress::-webkit-progress-bar {
 
 .warn::before {
   background: #f69e53; }
-.warn h4:hover {
+.warn h3:hover {
   background: #f69e53;
   color: #fff; }
 .warn span {
@@ -1098,7 +1004,7 @@ progress::-webkit-progress-bar {
 
 .error::before {
   background: #e50914; }
-.error h4:hover {
+.error h3:hover {
   background: #e50914;
   color: #fff; }
 .error span {
@@ -1107,7 +1013,7 @@ progress::-webkit-progress-bar {
 .ques, .ans {
   font-size: 12px;
   height: 30px;
-  display: inline-block;
+  display: block;
   border: 1px solid #666;
   position: relative;
   line-height: 30px;
@@ -1148,12 +1054,21 @@ progress::-webkit-progress-bar {
   .page-lost p {
     font-size: 2em; }
 
+.about-container img {
+  display: block;
+  width: 80%;
+  margin: 0 auto; }
+  @media (max-width: 414px) {
+    .about-container img {
+      width: 90vw;
+      margin-top: calc((100vh - 145px - 90vw) / 2); } }
+
 @media (min-width: 992px) {
   .archive {
     margin-bottom: 200px; } }
 @media (min-width: 769px) and (max-width: 991px) {
   .archive {
-    margin-bottom: 180px; } }
+    margin-bottom: 200px; } }
 @media (min-width: 415px) and (max-width: 768px) {
   .archive {
     margin-bottom: 180px; } }
@@ -1169,12 +1084,11 @@ progress::-webkit-progress-bar {
   .blog-archive h1 {
     font-size: 1.8em;
     font-weight: 300;
-    height: 48px;
-    line-height: 48px;
+    height: 54px;
+    line-height: 54px;
     padding-left: 8px;
     background: #ccc;
-    clear: both;
-    margin: 10px 0; }
+    clear: both; }
   .blog-archive h2 {
     font-weight: 1.5em;
     font-weight: 300;
@@ -1262,10 +1176,10 @@ progress::-webkit-progress-bar {
           font-size: 1.2em; } }
 
 .blog-categories h1 {
-  border-left: 48px solid #f96574; }
+  border-left: 54px solid #f96574; }
 
 .blog-tags h1 {
-  border-left: 48px solid #017890; }
+  border-left: 54px solid #017890; }
 
 .blog-archive h2:nth-of-type(1)::after {
   content: "1";

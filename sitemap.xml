@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/guides/</loc>
+<lastmod>1996-04-05T22:50:00+08:00</lastmod>
+</url>
+<url>
 <loc>/life/2016/12/01/word-001.html</loc>
 <lastmod>2016-12-01T18:35:32+08:00</lastmod>
 </url>
@@ -90,7 +94,7 @@
 <loc>/</loc>
 </url>
 <url>
-<loc>/test/</loc>
+<loc>/category/tool/</loc>
 </url>
 <url>
 <loc>/category/life/</loc>
@@ -109,6 +113,12 @@
 </url>
 <url>
 <loc>/category/limi/</loc>
+</url>
+<url>
+<loc>/1996/</loc>
+</url>
+<url>
+<loc>/1996/04/</loc>
 </url>
 <url>
 <loc>/2016/</loc>
@@ -142,5 +152,8 @@
 </url>
 <url>
 <loc>/page4/</loc>
+</url>
+<url>
+<loc>/page5/</loc>
 </url>
 </urlset>
