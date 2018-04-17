@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-15T00:43:46+08:00</updated><id>/</id><title type="html">leonmin’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Git push false</title><link href="/article/article-git.html" rel="alternate" type="text/html" title="Git push false" /><published>2018-04-14T12:29:00+08:00</published><updated>2018-04-14T12:29:00+08:00</updated><id>/article/article-git</id><content type="html" xml:base="/article/article-git.html">&lt;p&gt;这个博客是由另一个博客copy过来，但修改样式就弄了一天，昨晚还弄到了3点，然后git push到远程仓库,结果git push失败了，这几次都失败了，每次都删了库重新git push，很麻烦，但实在太困了就去睡了。&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-17T21:45:19+08:00</updated><id>/</id><title type="html">leonmin’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">跑步使我快乐</title><link href="/article/first-run.html" rel="alternate" type="text/html" title="跑步使我快乐" /><published>2018-04-17T20:29:00+08:00</published><updated>2018-04-17T20:29:00+08:00</updated><id>/article/first-run</id><content type="html" xml:base="/article/first-run.html">&lt;p&gt;很久没有跑步，一直在说，一直没有行动，直到昨晚下楼买泡面，碰到同学精疲力尽地回寝室，那个颗跑步的心又提上了日程。&lt;/p&gt;
+
+&lt;p&gt;八点半，时间刚刚好，来到操场，有很多人在跑步，一时间还不适应这种氛围，先走了一圈，走完一圈就开始慢跑起来，心想着今晚先跑十圈。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;其实我对十圈的概念不是很清楚，记得上一次在学校操场跑步，也不知跑了多少圈，反正一直跑，跑虚脱了，后来再也没跑过。&lt;/p&gt;
+
+&lt;p&gt;跑第一圈的时候，因为没带手机，所以再回想最近看到东西：解决跨域请求的方法？跨域资源共享、JSONP、postMessage、子域名代理、反向代理、window.name和window.hash。一边跑一边回忆各种方法的原理及使用。跑了两圈就知道五圈是今晚的极限了。跑第三圈的时候就没想怎么跨域，就开始胡思乱想，天马行空。跑第四圈的时候，意识开始模糊了，心里只想着还有最后一圈，还有最后一圈。&lt;/p&gt;
+
+&lt;p&gt;跑第五圈的时候，不经人是懵的，身体还有点飘，好像是身体向前倒的力推着我跑，心里想的是马上就跑完了，马上就跑完了。&lt;/p&gt;
+
+&lt;p&gt;跑完，又走了两圈。&lt;/p&gt;
+
+&lt;p&gt;跑完给人一种让你坚持下去的不是其他，而是终点的错觉。&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">很久没有跑步，一直在说，一直没有行动，直到昨晚下楼买泡面，碰到同学精疲力尽地回寝室，那个颗跑步的心又提上了日程。</summary></entry><entry><title type="html">Git push false</title><link href="/article/article-git.html" rel="alternate" type="text/html" title="Git push false" /><published>2018-04-14T12:29:00+08:00</published><updated>2018-04-14T12:29:00+08:00</updated><id>/article/article-git</id><content type="html" xml:base="/article/article-git.html">&lt;p&gt;这个博客是由另一个博客copy过来，但修改样式就弄了一天，昨晚还弄到了3点，然后git push到远程仓库,结果git push失败了，这几次都失败了，每次都删了库重新git push，很麻烦，但实在太困了就去睡了。&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;早上11点左右起来，继续弄git push，怎么弄就是不对，反反复复把本地代码整没了。哇，顿时心态爆炸，只有重新copy来重新修改样式。&lt;/p&gt;
 
@@ -26,7 +40,7 @@
 
 &lt;p&gt;于是我掏出一块钱。&lt;!-- more --&gt;然后当着她的面，从插满棒棒糖的盒子上拿了两个棒棒糖放在她面前，口里说着：1毛，然后再拿两个棒棒糖，口里说着：1毛。大概拿了七八个棒棒糖的时候。突然感觉哪里不对劲，一时间也不知道1块钱可以买2个，还是5个，还是多少个。也没看老板娘眼神，放了一块钱，抓起棒棒糖就走了，一路上还在想自己是拿多了还是拿少了。&lt;/p&gt;
 
-&lt;p&gt;回到学校，坐了下来，才捋明白其中的道理。转手将两个棒棒糖买了1块钱（那时学校管得严，不准校内的小卖部卖零食），自己吃了两个，剩下的送给邻桌的几个女同学了。&lt;/p&gt;
+&lt;p&gt;回到学校，坐了下来，才捋明白其中的道理。转手将两个棒棒糖卖了1块钱（那时学校管得严，不准校内的小卖部卖零食），自己吃了两个，剩下的送给邻桌的几个女同学了。&lt;/p&gt;
 
 &lt;p&gt;很多时候算数让我吃了亏，但这一次除外。&lt;/p&gt;
 
@@ -105,34 +119,4 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;这几天梦到初中班主任，很是感慨。因为初中班主任对我帮助很大，但毕业之后一直没机会说一声感谢。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">梦到似颦似笑班主任</summary></entry><entry><title type="html">说说</title><link href="/life/word-001.html" rel="alternate" type="text/html" title="说说" /><published>2016-12-01T18:35:32+08:00</published><updated>2016-12-01T18:35:32+08:00</updated><id>/life/word-001</id><content type="html" xml:base="/life/word-001.html">&lt;p&gt;这几天心里颇不宁静,仿佛手里没有双王的感觉..&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">这几天心里颇不宁静,仿佛手里没有双王的感觉..</summary></entry><entry><title type="html">猫舍</title><link href="/article/article-ms.html" rel="alternate" type="text/html" title="猫舍" /><published>2016-02-29T00:29:00+08:00</published><updated>2016-02-29T00:29:00+08:00</updated><id>/article/article-ms</id><content type="html" xml:base="/article/article-ms.html">&lt;p&gt;追忆记忆回忆都想不起&lt;/p&gt;
-
-&lt;p&gt;过了十年又十年&lt;/p&gt;
-
-&lt;p&gt;我所见过的猫都一般模样&lt;/p&gt;
-
-&lt;p&gt;灰黄黑白花&lt;/p&gt;
-
-&lt;p&gt;所以时间挡不住&lt;/p&gt;
-
-&lt;p&gt;总有那么一只猫要替代一只猫&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;可这么几年没有那么一只猫 与伴&lt;/p&gt;
-
-&lt;p&gt;仿佛到泪点&lt;/p&gt;
-
-&lt;p&gt;仿佛到失眠&lt;/p&gt;
-
-&lt;p&gt;幻想&lt;/p&gt;
-
-&lt;p&gt;有那么一天我的生活有那么一只猫 语伴&lt;/p&gt;
-
-&lt;p&gt;所谓&lt;/p&gt;
-
-&lt;p&gt;没有猫不成舍&lt;/p&gt;
-
-&lt;p&gt;没了猫&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;匆匆二十年，家里养过两只猫。上了高中以后，就很少有机会接触猫了，我一个重度吸猫者…&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">追忆记忆回忆都想不起</summary></entry></feed>
+&lt;p&gt;这几天梦到初中班主任，很是感慨。因为初中班主任对我帮助很大，但毕业之后一直没机会说一声感谢。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">梦到似颦似笑班主任</summary></entry><entry><title type="html">说说</title><link href="/life/word-001.html" rel="alternate" type="text/html" title="说说" /><published>2016-12-01T18:35:32+08:00</published><updated>2016-12-01T18:35:32+08:00</updated><id>/life/word-001</id><content type="html" xml:base="/life/word-001.html">&lt;p&gt;这几天心里颇不宁静,仿佛手里没有双王的感觉..&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">这几天心里颇不宁静,仿佛手里没有双王的感觉..</summary></entry></feed>
