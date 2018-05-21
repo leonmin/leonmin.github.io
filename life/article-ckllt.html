@@ -8,8 +8,7 @@
   <title>喵~长短亭</title>
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/css/main.css">
-
-
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body>
   <div class="container">
@@ -107,18 +106,30 @@
 <section id="posts">
     
     <article class="post">
+  
+  <header class="post-header">
     
-    <header class="post-header">
-        
-        <h1 class="post-h-title post-i-title">踩空了楼梯</h1>
-      
-      
-      <div class="avatar">
-        <img src="/assets//images/site/leonmin.png" class="avatar-img">
-        <div class="post-info"><span class="post-author">leonmin</span><div class="post-date"> 2017年8月20日</div></div>
+    <h1 class="post-h-title post-i-title">踩空了楼梯</h1>
+     
+    <div class="avatar">
+      <img src="/assets//images/site/leonmin.png" class="avatar-img">
+      <div class="post-info">
+        <span class="post-author">leonmin</span>
+        <div class="post-date"> 2017年8月20日
+          <span id="/life/article-ckllt.html" class="leancloud_visitors" data-flag-title="踩空了楼梯">
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            
+            <span class="leancloud-visitors-count"></span>
+          </span>
+          </div>
       </div>
-      
-    </header>
+    </div>
+
+    
+  </header>
   <section class="post-content">
     <h3>多少次与死亡擦肩而过,就有多少次觉得死去不如活着..</h3>
 
@@ -145,27 +156,8 @@
 <p>那天我踩空了楼梯，这世间少了一个烦恼的男孩，多了一个积极乐观的男孩，真的，只有真正地经历过绝望，你才知道原来生活其实挺美好的。(除了花一段时间消除对楼梯的恐惧…)</p>
 
   </section>
-  <footer class="post-comment">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjgwNS85MzY2">
-      <script type="text/javascript">
-        (function (d, s) {
-          var j, e = d.getElementsByTagName(s)[0];
-
-          if (typeof LivereTower === 'function') {
-            return;
-          }
-
-          j = d.createElement(s);
-          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-          j.async = true;
-
-          e.parentNode.insertBefore(j, e);
-        })(document, 'script');
-      </script>
-      <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    </div>
-  </footer>
-  </article>
+  <div id="comment"></div>
+</article>
 </section>
 
 
@@ -191,8 +183,8 @@
     <div class="contact">
       <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
       <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminn"><i class="fa fa-instagram"></i></a>
       <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
-      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
     </div>
     <div class="friend-link">
       <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt="jekyll"></a>
@@ -204,5 +196,8 @@
   <script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/simple-jekyll-search.js"></script>
   <script src="/assets/js/limon.js"></script>
+  <script src="/assets/js/valine.js"></script>
+  <script src="/assets/js/visitor.js"></script>
+  
 </body>
 </html>

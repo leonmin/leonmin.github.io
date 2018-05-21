@@ -8,8 +8,7 @@
   <title>喵~长短亭</title>
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/css/main.css">
-
-
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body>
   <div class="container">
@@ -107,18 +106,30 @@
 <section id="posts">
     
     <article class="post">
+  
+  <header class="post-header">
     
-    <header class="post-header">
-        
-        <h1 class="post-h-title post-i-title">建博的心路历程</h1>
-      
-      
-      <div class="avatar">
-        <img src="/assets//images/site/leonmin.png" class="avatar-img">
-        <div class="post-info"><span class="post-author">leonmin</span><div class="post-date"> 2018年4月10日</div></div>
+    <h1 class="post-h-title post-i-title">建博的心路历程</h1>
+     
+    <div class="avatar">
+      <img src="/assets//images/site/leonmin.png" class="avatar-img">
+      <div class="post-info">
+        <span class="post-author">leonmin</span>
+        <div class="post-date"> 2018年4月10日
+          <span id="/article/article-bloghistory.html" class="leancloud_visitors" data-flag-title="建博的心路历程">
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            
+            <span class="leancloud-visitors-count"></span>
+          </span>
+          </div>
       </div>
-      
-    </header>
+    </div>
+
+    
+  </header>
   <section class="post-content">
     <p>高中毕业后，我在淘宝买了我的第一台电脑，戴尔XPS15，开始接触互联网，当时网上的慕课挺火的，自己就开始自学各种技术，什么Java,C,C++各种学，各种入门后就没什么兴趣，学不下去。<!-- more -->后来接触到HTML,CSS，感觉挺简单挺有意思的，就学了一段时间，但也只是一种小兴趣。</p>
 
@@ -135,27 +146,8 @@
 <p>最近使用jekyll+github+cloudflare完成leonm.in的搭建。</p>
 
   </section>
-  <footer class="post-comment">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjgwNS85MzY2">
-      <script type="text/javascript">
-        (function (d, s) {
-          var j, e = d.getElementsByTagName(s)[0];
-
-          if (typeof LivereTower === 'function') {
-            return;
-          }
-
-          j = d.createElement(s);
-          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-          j.async = true;
-
-          e.parentNode.insertBefore(j, e);
-        })(document, 'script');
-      </script>
-      <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    </div>
-  </footer>
-  </article>
+  <div id="comment"></div>
+</article>
 </section>
 
 
@@ -181,8 +173,8 @@
     <div class="contact">
       <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
       <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminn"><i class="fa fa-instagram"></i></a>
       <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
-      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
     </div>
     <div class="friend-link">
       <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt="jekyll"></a>
@@ -194,5 +186,8 @@
   <script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/simple-jekyll-search.js"></script>
   <script src="/assets/js/limon.js"></script>
+  <script src="/assets/js/valine.js"></script>
+  <script src="/assets/js/visitor.js"></script>
+  
 </body>
 </html>

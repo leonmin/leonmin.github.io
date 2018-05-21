@@ -174,15 +174,18 @@ progress::-webkit-progress-bar { background-color: transparent; }
 
 .post-footer { color: #333; }
 
+#comment .vwrap { border: 2px solid #eee; }
+
 .pagination { height: 30px; width: 80%; margin: 30px auto; border-top: 2px solid #ccc; text-align: center; }
+.pagination .previous, .pagination .next { width: 25px; margin: 0; background: #ccc; }
+.pagination .previous i, .pagination .next i { font-size: 1.2em; }
 .pagination span, .pagination a { box-sizing: content-box; position: relative; display: inline-block; padding: 0 10px; margin: 0 8px; line-height: 30px; height: 100%; top: -2px; line-height: 30px; }
-.pagination .page-path { color: #555; border-top: 2px solid #ccc; }
-.pagination .page-path:hover { border-top: 2px solid #555; }
+.pagination .page-path { color: #555; border-top: 2px solid #555; }
 .pagination span { color: #fff; background: #ccc; }
 .pagination .page_number { background: #555; border-top: 2px solid #555; margin: 0 -5px; padding: 0; }
 .pagination .page_number a { color: #fff; }
-.pagination .page-n-first, .pagination .page-n-last { padding: 0; margin: 0; background: #ccc; }
-.pagination .page-n-first a, .pagination .page-n-last a { color: #fff; }
+.pagination .page-n-first, .pagination .page-n-last { padding: 0; margin: 0 -5px; border: none; background: #eee; }
+.pagination .page-n-first a, .pagination .page-n-last a { color: #555; }
 
 .move-btn { line-height: 20px; position: fixed; right: 16px; bottom: 52px; width: 40px; height: 40px; cursor: pointer; overflow: hidden; z-index: 100; }
 @media (min-width: 415px) and (max-width: 768px) { .move-btn { display: none; } }
@@ -291,12 +294,12 @@ progress::-webkit-progress-bar { background-color: transparent; }
 @media (min-width: 415px) and (max-width: 768px) { .page-list { border-radius: var(--p-radius); width: var(--p-width); height: var(--p-width); font-size: 1.2em; } }
 @media (min-width: 769px) and (max-width: 991px) { .page-list { width: var(--t-width); height: var(--t-width); border-radius: var(--t-radius); font-size: 1.5em; } }
 @media (min-width: 992px) { .page-list { width: var(--d-width); height: var(--d-width); border-radius: var(--t-radius); font-size: 1.4em; margin: 26.5px; } }
-.page-list::after { content: ""; position: absolute; height: 15px; width: 15px; border-radius: 11.5px; background: #f46a56; border: 4px solid #fff; }
+.page-list::after { content: ""; position: absolute; height: 15px; width: 15px; border-radius: 11.5px; background: #f46a56; border: 4px solid #eee; }
 @media (max-width: 414px) { .page-list::after { top: var(--m-before); left: var(--m-before); } }
 @media (min-width: 415px) and (max-width: 768px) { .page-list::after { top: 1%; left: 1%; } }
 @media (min-width: 769px) and (max-width: 991px) { .page-list::after { top: 5%; left: 5%; } }
 @media (min-width: 992px) { .page-list::after { top: 5px; left: 5px; } }
-.page-list a { display: inline-block; width: calc(80% - 2px); height: calc(80% - 2px); margin: 10%; border: 1px solid #eee; text-align: center; }
+.page-list a { display: inline-block; width: calc(80% - 2px); height: calc(80% - 2px); margin: 10%; border: 1px solid #fff; text-align: center; }
 @media (max-width: 414px) { .page-list a { border-radius: var(--m-radius); line-height: var(--m-line-height); } }
 @media (min-width: 415px) and (max-width: 768px) { .page-list a { border-radius: var(--p-radius); line-height: var(--p-line-height); } }
 @media (min-width: 769px) and (max-width: 991px) { .page-list a { border-radius: var(--t-radius); line-height: var(--t-line-height); } }

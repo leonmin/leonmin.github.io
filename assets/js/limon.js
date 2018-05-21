@@ -5,6 +5,7 @@
 // $(document).on('pjax:end',function(){
 // 	NProgress.done();
 // });
+
 $(document).ready(function(){
 	if(window.console){
 		console.log("\n 冉冉年华老，苒苒物华休。何处不容我？沽酒处为家。\n \n %c Version %c 1.0.0 ","background:#5fcf80;color:#fff;padding:5px 0","background:#ccc;color:#fff;padding:5px 8px 5px 0");
@@ -13,15 +14,6 @@ $(document).ready(function(){
 	var container = $(".container");
 	var windowHeight= $(window).height();
 	container.css("min-height",windowHeight);
-	//Back Button
-	// NProgress.configure({
-  // 	template: '<div class="bar" role="bar"><div class="peg"></div></div>'
-	// });
-	
-	// NProgress.start();
-	// $(window).load(function(){
-	// 	NProgress.done();
-	// });
 
 	//head menu
 	$(".head-menu-btn").click(function () {

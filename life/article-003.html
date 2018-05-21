@@ -8,8 +8,7 @@
   <title>喵~长短亭</title>
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/css/main.css">
-
-
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body>
   <div class="container">
@@ -107,18 +106,30 @@
 <section id="posts">
     
     <article class="post">
+  
+  <header class="post-header">
     
-    <header class="post-header">
-        
-        <h1 class="post-h-title post-i-title">浪淘沙慢 柳永</h1>
-      
-      
-      <div class="avatar">
-        <img src="/assets//images/site/leonmin.png" class="avatar-img">
-        <div class="post-info"><span class="post-author">leonmin</span><div class="post-date"> 2016年12月8日</div></div>
+    <h1 class="post-h-title post-i-title">浪淘沙慢 柳永</h1>
+     
+    <div class="avatar">
+      <img src="/assets//images/site/leonmin.png" class="avatar-img">
+      <div class="post-info">
+        <span class="post-author">leonmin</span>
+        <div class="post-date"> 2016年12月8日
+          <span id="/life/article-003.html" class="leancloud_visitors" data-flag-title="浪淘沙慢 柳永">
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            
+            <span class="leancloud-visitors-count"></span>
+          </span>
+          </div>
       </div>
-      
-    </header>
+    </div>
+
+    
+  </header>
   <section class="post-content">
     <p>梦觉、透窗风一线，寒灯吹息。那堪酒醒，又闻空阶，夜雨频滴。嗟因循、久作天涯客。负佳人、几许盟言，便忍把、从前欢会，陡顿翻成忧戚。 
 <img src="/assets/images/posts/wavesand.png" alt="浪淘沙慢" class="post-s-img" />
@@ -140,27 +151,8 @@
 <p>有一天晚上，窗外月色很好，我打开了窗，迎着夜色，晚风，虫鸣，我想起了一句词，“透窗风一线”，于是我兴奋地把网名改成了透窗风一线，这就是我为什么喜欢这首词的原因。</p>
 
   </section>
-  <footer class="post-comment">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjgwNS85MzY2">
-      <script type="text/javascript">
-        (function (d, s) {
-          var j, e = d.getElementsByTagName(s)[0];
-
-          if (typeof LivereTower === 'function') {
-            return;
-          }
-
-          j = d.createElement(s);
-          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-          j.async = true;
-
-          e.parentNode.insertBefore(j, e);
-        })(document, 'script');
-      </script>
-      <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    </div>
-  </footer>
-  </article>
+  <div id="comment"></div>
+</article>
 </section>
 
 
@@ -186,8 +178,8 @@
     <div class="contact">
       <a target="_blank" href="https://weibo.com/leonmin"><i class="fa fa-weibo"></i></a>
       <a target="_blank" href="https://github.com/leonmin"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://www.instagram.com/leonminn"><i class="fa fa-instagram"></i></a>
       <a target="_blank" href="https://twitter.com/leonminnn"><i class="fa fa-twitter"></i></a>
-      <a target="_blank" href="https://www.instagram.com/leonminnn"><i class="fa fa-instagram"></i></a>
     </div>
     <div class="friend-link">
       <a target="_blank" href="https://jekyllrb.com/"><img src="/assets/images/site/jekyll-logo.png" alt="jekyll"></a>
@@ -199,5 +191,8 @@
   <script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/simple-jekyll-search.js"></script>
   <script src="/assets/js/limon.js"></script>
+  <script src="/assets/js/valine.js"></script>
+  <script src="/assets/js/visitor.js"></script>
+  
 </body>
 </html>
