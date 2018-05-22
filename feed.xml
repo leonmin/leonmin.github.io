@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-21T19:27:35+08:00</updated><id>/</id><title type="html">leonmin’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">毕业论文心路</title><link href="/article/thesis.html" rel="alternate" type="text/html" title="毕业论文心路" /><published>2018-04-24T18:29:00+08:00</published><updated>2018-04-24T18:29:00+08:00</updated><id>/article/thesis</id><content type="html" xml:base="/article/thesis.html">&lt;p&gt;今天弄完毕业论文这一摊子事，算是结束了大学生活。但就完成毕业论文其中的艰辛，我觉得有必要记录一下。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-23T00:32:48+08:00</updated><id>/</id><title type="html">leonmin’s blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">学海无涯</title><link href="/article/school-life.html" rel="alternate" type="text/html" title="学海无涯" /><published>2018-05-21T18:29:00+08:00</published><updated>2018-05-21T18:29:00+08:00</updated><id>/article/school-life</id><content type="html" xml:base="/article/school-life.html">&lt;p&gt;总结一下这十几年的学习之路吧。&lt;/p&gt;
+
+&lt;p&gt;幼儿园，整天耍，没啥印象。&lt;/p&gt;
+
+&lt;p&gt;小学，开始和小伙伴玩，边学边耍，边耍边学，差点留级。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;中学，开始有点上道的感觉，开始觉得学习很重要，朋友很重要，但还是要耍好。&lt;/p&gt;
+
+&lt;p&gt;高中，高中真的是酸甜苦辣都有，学习压力开始变大，玩的东西也变多。最令我影响深刻的就是一款手机游戏和动漫了。那时候，拿着Nokia什么来着，玩着回合制的游戏，乐在其中，花了不少钱，完了一两年，天天刷副本，很简单很快乐，很充实，还记得有一年国庆节门都没出，玩了7天这个游戏。另一个就是动漫了，那时把搜狐和pptv上不幼稚，非国产的动漫看的差不多，没什么看的了。反而到了大学，突然动漫翻天覆地迎面而来，一时还不知道看啥，所以大学看的动漫少，只看了火影，海贼王，东京吃货，寄生兽，小埋等。&lt;/p&gt;
+
+&lt;p&gt;大学，开始贯彻宅文化，每天在寝室打游戏，看电影。打游戏，和朋友开开黑，还是挺有意思的。看电影，高中还喜欢看看韩国电影，奇幻，血腥，上了大学，喜欢看日本电影，漫改，爱情，喜剧，科幻，只要评分上6分，或有我认识的明星我一般都会看。大学还追了下美剧，高中时看铁杉树丛入的坑，后来在朋友推荐下看了行尸走肉，又看了基本演绎法，硅谷，西部世界，感觉世界真奇妙。&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">总结一下这十几年的学习之路吧。</summary></entry><entry><title type="html">毕业论文心路</title><link href="/article/thesis.html" rel="alternate" type="text/html" title="毕业论文心路" /><published>2018-04-24T18:29:00+08:00</published><updated>2018-04-24T18:29:00+08:00</updated><id>/article/thesis</id><content type="html" xml:base="/article/thesis.html">&lt;p&gt;今天弄完毕业论文这一摊子事，算是结束了大学生活。但就完成毕业论文其中的艰辛，我觉得有必要记录一下。&lt;/p&gt;
 
 &lt;p&gt;一开始写论文，一切都感觉很正常，确定论文题目、做论文项目的程序、写论文和改格式。然后自己小心翼翼地检查几遍论文后交给指导老师。&lt;!-- more --&gt;&lt;/p&gt;
 
@@ -34,7 +46,13 @@
 
 &lt;p&gt;我不是感慨论文有多麻烦或是老师要求太严格，而是为什么会这样，要是自己一开始就认真对待，认真修改格式，会有后面的问题吗？我之所以记录这件事，就想提醒自己有一个良好的编码习惯，养成一套良好的编程规范，要说养成其他什么好习惯，太扯了，不提。&lt;/p&gt;
 
-&lt;p&gt;当然要说明一下，怎么一直在修改格式，其实这其中也有很多问题，学院给了一个模板，要求都很明确，又不是那么的明确，院上的标准又和系上的标准又没统一。就感觉没有编码规范一样。我一直在想，要是有时间，我都想把整个论文格式整理一遍，让学弟学妹少走弯路，但后来听指导老师想弄，我也就不费那神了。&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">今天弄完毕业论文这一摊子事，算是结束了大学生活。但就完成毕业论文其中的艰辛，我觉得有必要记录一下。</summary></entry><entry><title type="html">跑步使我快乐</title><link href="/article/first-run.html" rel="alternate" type="text/html" title="跑步使我快乐" /><published>2018-04-17T20:29:00+08:00</published><updated>2018-04-17T20:29:00+08:00</updated><id>/article/first-run</id><content type="html" xml:base="/article/first-run.html">&lt;p&gt;很久没有跑步，一直在说，一直没有行动，直到昨晚下楼买泡面，碰到同学跑完步精疲力尽地回寝室，那个颗跑步的心又提上了日程。&lt;/p&gt;
+&lt;p&gt;当然要说明一下，怎么一直在修改格式，其实这其中也有很多问题，学院给了一个模板，要求都很明确，又不是那么的明确，院上的标准又和系上的标准又没统一。就感觉没有编码规范一样。我一直在想，要是有时间，我都想把整个论文格式整理一遍，让学弟学妹少走弯路，但后来听指导老师想弄，我也就不费那神了。&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">今天弄完毕业论文这一摊子事，算是结束了大学生活。但就完成毕业论文其中的艰辛，我觉得有必要记录一下。</summary></entry><entry><title type="html">班级聚餐</title><link href="/article/dine-together.html" rel="alternate" type="text/html" title="班级聚餐" /><published>2018-04-22T18:29:00+08:00</published><updated>2018-04-22T18:29:00+08:00</updated><id>/article/dine-together</id><content type="html" xml:base="/article/dine-together.html">&lt;p&gt;今天参加完毕业答辩，班上组织了聚餐。记得上一次班级聚餐是..我忘了，但还有图。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/dine1.png&quot; alt=&quot;dine1&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/dine2.png&quot; alt=&quot;dine2&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">今天参加完毕业答辩，班上组织了聚餐。记得上一次班级聚餐是..我忘了，但还有图。</summary></entry><entry><title type="html">跑步使我快乐</title><link href="/article/first-run.html" rel="alternate" type="text/html" title="跑步使我快乐" /><published>2018-04-17T20:29:00+08:00</published><updated>2018-04-17T20:29:00+08:00</updated><id>/article/first-run</id><content type="html" xml:base="/article/first-run.html">&lt;p&gt;很久没有跑步，一直在说，一直没有行动，直到昨晚下楼买泡面，碰到同学跑完步精疲力尽地回寝室，那个颗跑步的心又提上了日程。&lt;/p&gt;
 
 &lt;p&gt;八点半，时间刚刚好，来到操场，有很多人在跑步，一时间还不适应这种氛围，先走了一圈，走完一圈就开始慢跑起来，心想着今晚先跑十圈。&lt;/p&gt;
 
@@ -60,7 +78,7 @@
 
 &lt;p&gt;大二的时候自己可以做一些优美的页面，就有了做博客的想法，然后开始百度建站大法，知道了建站需要买域名和主机，和各种配置。&lt;/p&gt;
 
-&lt;p&gt;大三的时候觉得时机成熟了，买了几个域名，有leonming.com和ucarry.me两个域名，还买了一个云主机。卖完后才知道国内线路主机上的网站部署需要备案，备案又很麻烦，备案后，然后写了一个简单的页面放在网上，也就是一个展示的页面，没什么意识，意思到要学一门后端语言，当时说PHP是最好的语言，然后又入了一下门，买了教程，开始一步一步搭建网站。刚好大三选方向，选到了ASP.NET方向，老师都极为给力，每天都给一大堆作业，搞得我没时间学PHP，就开始老实地学习ASP.NET。&lt;/p&gt;
+&lt;p&gt;大三的时候觉得时机成熟了，买了几个域名，有leonming.com和ucarry.me两个域名，还买了一个云主机。买完后才知道国内线路主机上的网站部署需要备案，备案又很麻烦，备案后，然后写了一个简单的页面放在网上，也就是一个展示的页面，没什么意思，意识到要学一门后端语言，当时说PHP是最好的语言，然后又入了一下门，买了教程，开始一步一步搭建网站。刚好大三选方向，选到了ASP.NET方向，老师都极为给力，每天都给一大堆作业，搞得我没时间学PHP，就开始老实地学习ASP.NET。&lt;/p&gt;
 
 &lt;p&gt;后来又买了leonmin.com和leonm.in两个网站。&lt;/p&gt;
 
@@ -82,77 +100,30 @@
 
 &lt;p&gt;后来我一直想知道老板娘当时看到的操作后是什么反应，是被我带跑偏了，还是静静地看我表演。&lt;/p&gt;
 
-&lt;p&gt;我记得另外一件事，上高中的时候，撘早班车，天还没亮。司机让一个乘客帮着收车费，也不知道是天太黑，还是什么情况，多收了我二十块钱。当时也没注意，回到学校那个气呀，结果晚上在食堂打饭时，食堂阿姨多找了我二十，简直了…&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">上初中的时候，在家里吃完午饭会学校时，路过一家小卖部。</summary></entry><entry><title type="html">说说</title><link href="/life/word-002.html" rel="alternate" type="text/html" title="说说" /><published>2017-11-08T17:20:32+08:00</published><updated>2017-11-08T17:20:32+08:00</updated><id>/life/word-002</id><content type="html" xml:base="/life/word-002.html">&lt;p&gt;我希望，如电影般的，在必要的时候，比如在程序员做不下去的时候，掏出我老艺术家的身份。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">我希望，如电影般的，在必要的时候，比如在程序员做不下去的时候，掏出我老艺术家的身份。</summary></entry><entry><title type="html">踩空了楼梯</title><link href="/life/article-ckllt.html" rel="alternate" type="text/html" title="踩空了楼梯" /><published>2017-08-20T19:15:00+08:00</published><updated>2017-08-20T19:15:00+08:00</updated><id>/life/article-ckllt</id><content type="html" xml:base="/life/article-ckllt.html">&lt;h3&gt;多少次与死亡擦肩而过,就有多少次觉得死去不如活着..&lt;/h3&gt;
+&lt;p&gt;我记得另外一件事，上高中的时候，撘早班车，天还没亮。司机让一个乘客帮着收车费，也不知道是天太黑，还是什么情况，多收了我二十块钱。当时也没注意，回到学校那个气呀，结果晚上在食堂打饭时，食堂阿姨多找了我二十，简直了…&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">上初中的时候，在家里吃完午饭会学校时，路过一家小卖部。</summary></entry><entry><title type="html">家</title><link href="/article/home.html" rel="alternate" type="text/html" title="家" /><published>2018-02-13T18:29:00+08:00</published><updated>2018-02-13T18:29:00+08:00</updated><id>/article/home</id><content type="html" xml:base="/article/home.html">&lt;p&gt;每次过年回家都会去湾里转转，每次都会拍些照，每次换了手机照片都不见了，然后又等下一次过年回家，去湾里重新拍照。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/stairs.png&quot; alt=&quot;stairs&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今年8月份去山东日照出差，连续工作了两周后，师傅带着我们去海边洗海澡。&lt;!-- more --&gt;老实说十分兴奋，一下水先把游泳圈套上，然后往水深处走，走了一会了，水还没淹过肚子，觉得水浅没必要用游泳圈，就把游泳圈套在手上，继续往深处走。没想到从海那边打过来一个浪，脚离开地面，整个人失去平衡，一头栽在水中，一时间海水把我眼镜冲掉了，在水里我下意识一把抓住了眼镜，打算站起来，然而一个浪接一个浪的打过来，然后一手拿眼镜，一手拿游泳圈，游泳圈在水面浮着，整个人在水里挣扎，不知道挣扎了多久，也不知道喝了多少海水，当时心里想着要是在喝撑前没被浪冲到水浅的地方，可能我的第一次出差就成最后一次。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/seaside.jpg&quot; alt=&quot;seaside&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;那时真的用了吃奶的劲才活下来。然后我套上游泳圈，面无表情的继续洗海澡，装作什么都没有发生过一样。后来不小心海水溅到口里，才发现海水真的是咸得苦，刚才喝了几口都没觉得。我在挣扎的时候我感觉整个海边就我一个人，那种绝望我是领会到了，然而上一次经历这种绝望，便是我踩空楼梯的时候。&lt;/p&gt;
-
-&lt;p&gt;在高二的一段时间，我整天都浑浑噩噩，无限琐事，无限循环。&lt;/p&gt;
-
-&lt;p&gt;故事就发生在一个没有太阳的上午。这周轮换到我当学习委员，刚好教室没有粉笔，跑了好几次都没领到。于是在这一天的第二节课课间，我去了楼下的办公室，依然被告知还没有粉笔。又只能等下次，怀着极其消极的心态往教室走，在上楼梯时，真的是所有思绪一下子涌了上来，突然不知道怎么上楼梯了（当时应该是突然不知该迈哪只脚，迈出去的时候，迈少了），然后就踩空了，我一般对朋友们这样讲。其实那天真实情况是：在所有思绪一下子涌了上来的时候，我还知道怎么上楼梯，但我就在那么迷的时候，还多看了旁边的两个漂亮女生，然后才不知到怎么上楼梯，然后踩空了，然后脑子一片空白，然后旁边两个女生也吓了一跳，然后我很慌的站了起来故作镇定地走回了教室。回到教室过了一会发现有点不对劲，我摸了下巴，居然在流血，没办法，只有向物理老师请了假去医院。&lt;/p&gt;
-
-&lt;p&gt;离开教室我先来到医务室，医生叫我去校外医院去缝几针。然后我就来到小卖部，买了两包卫生纸，用来止血，然后往校门口走，没想到被门卫拦了下来，说是没有请假条不能离校，我说你看我这样还要请假条吗?我指了我还在流血的下巴。就跟我担心的一样，没错，还要。没办法，我只能去教务处去批请假条，真是怕什么来什么，没想到教务处没人。那个时候我两包纸都用完了，只能在教学楼闲逛，说真的那个时候，虽然很迷，但还是有点血性，想要不然就流血流死算了，反正生活这么烦恼。现在想来，虽然当时很迷，陷入生活几件琐事的无限循环中，出不来，但是还是庆幸有点理性，去小卖部给班主任打了电话，班主任在上课，叫我放了学去办公室找他。于是我就这么流血流了一节课，你要问我为什么现在有轻微的晕血，我只说见多了就腻了。然后我就来到班主任办公室等他，真的当时自己真的很怕，感觉自己在死亡的边缘，时间又过的很慢，班主任下了课怎么还不来，感觉在拖堂。&lt;/p&gt;
-
-&lt;p&gt;最后我坐上了班主任的车，他看了我的伤口，说你这伤口挺大，应该要缝几针，刚好我有认识的人在开小诊所，我带你去吧，然后我们来到一个很偏的诊所。那个医生看了我的伤口说这个要缝，然后准备了一会儿，我也准备好了，然后他说，我只缝一针，就不打麻药了怎么样，我纠结了一下，还就答应了，然后，一针，两针，三针…我想骂人。&lt;/p&gt;
-
-&lt;p&gt;后来缝好包扎好，回到学校，回到寝室，看看室友，仿佛什么都没发生过。&lt;/p&gt;
-
-&lt;p&gt;那天我踩空了楼梯，却把自己摔醒了，可能是因为脑缺血顾及不了琐事了吧，也可能是经历过”死亡”，其他都感觉不重要吧。&lt;/p&gt;
-
-&lt;p&gt;那天我踩空了楼梯，这世间少了一个烦恼的男孩，多了一个积极乐观的男孩，真的，只有真正地经历过绝望，你才知道原来生活其实挺美好的。(除了花一段时间消除对楼梯的恐惧…)&lt;/p&gt;</content><author><name>leonmin</name></author><category term="record" /><summary type="html">多少次与死亡擦肩而过,就有多少次觉得死去不如活着..</summary></entry><entry><title type="html">浪淘沙慢 柳永</title><link href="/life/article-003.html" rel="alternate" type="text/html" title="浪淘沙慢 柳永" /><published>2016-12-08T20:02:32+08:00</published><updated>2016-12-08T20:02:32+08:00</updated><id>/life/article-003</id><content type="html" xml:base="/life/article-003.html">&lt;p&gt;梦觉、透窗风一线，寒灯吹息。那堪酒醒，又闻空阶，夜雨频滴。嗟因循、久作天涯客。负佳人、几许盟言，便忍把、从前欢会，陡顿翻成忧戚。 
-&lt;img src=&quot;/assets/images/posts/wavesand.png&quot; alt=&quot;浪淘沙慢&quot; class=&quot;post-s-img&quot; /&gt;
 &lt;!-- more --&gt;
-愁极，再三追思，洞房深处，几度饮散歌阑，香暖鸳鸯被。岂暂时疏散，费伊心力。殚云尤雨，有万般千种，相怜相惜。&lt;/p&gt;
 
-&lt;p&gt;恰到如今，天长漏永，无端自家疏隔。知何时、却拥秦云态？原低帏昵枕，轻轻细说与，江乡夜夜，数寒更思忆。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home0.jpg&quot; alt=&quot;home0&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;我从来没有过夜半酒醒的经历，之所以喜欢这首词的原因是“透窗风一线”和“又闻空阶，夜雨频滴”。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home1.jpg&quot; alt=&quot;home1&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;我喜欢独处，喜欢熬夜，因为它们都一个共同点，就是有一个安静的环境。我记得从初中到大学每一年的暑假，我都是一个人在家，有的时候，我很庆幸自己能这么自由，安排自己的时间，做自己想做的事。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home2.jpg&quot; alt=&quot;home2&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;”又闻空阶，夜雨频滴“，在初中，高中的暑假里，那个时候还住在老房子里，白天到田边转转，到朋友家玩玩，到了晚上，夜很静，虽然家处在乡间，本来就不喧闹，但夜的黑更添一份静谧。呆在屋子里，照着如月色皎白的节能灯，临摹一些画，或是写一些感悟，没有电视，手机也只能刷刷动态，就这样，很简单，却很充实。而最让人感触的是下雨的夜，让夜变得更加宁静，这种宁静是屋里屋外两相隔，仿佛是一叶扁舟于湖面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home3.jpg&quot; alt=&quot;home3&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/oldhouse.jpg&quot; alt=&quot;老房子&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home4.jpg&quot; alt=&quot;home4&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;到了大学，变得是住处，不变的是独处。大学的暑假变得更宅，很少出去玩，就在家看看电视，逛逛网站，打打游戏，如此而已，反而到了晚上，整个人变得精神了，好像新的一天刚刚开始。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home5.jpg&quot; alt=&quot;home5&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;有一天晚上，窗外月色很好，我打开了窗，迎着夜色，晚风，虫鸣，我想起了一句词，“透窗风一线”，于是我兴奋地把网名改成了透窗风一线，这就是我为什么喜欢这首词的原因。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="peom" /><summary type="html">梦觉、透窗风一线，寒灯吹息。那堪酒醒，又闻空阶，夜雨频滴。嗟因循、久作天涯客。负佳人、几许盟言，便忍把、从前欢会，陡顿翻成忧戚。 愁极，再三追思，洞房深处，几度饮散歌阑，香暖鸳鸯被。岂暂时疏散，费伊心力。殚云尤雨，有万般千种，相怜相惜。</summary></entry><entry><title type="html">蝶恋花 柳永</title><link href="/life/article-002.html" rel="alternate" type="text/html" title="蝶恋花 柳永" /><published>2016-12-06T22:17:32+08:00</published><updated>2016-12-06T22:17:32+08:00</updated><id>/life/article-002</id><content type="html" xml:base="/life/article-002.html">&lt;p&gt;伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home6.jpg&quot; alt=&quot;home6&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/loveofbutterfly.png&quot; alt=&quot;蝶恋花&quot; class=&quot;post-s-img&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/home7.jpg&quot; alt=&quot;home7&quot; class=&quot;post-s-img&quot; /&gt;&lt;/p&gt;</content><author><name>leonmin</name></author><summary type="html">每次过年回家都会去湾里转转，每次都会拍些照，每次换了手机照片都不见了，然后又等下一次过年回家，去湾里重新拍照。</summary></entry><entry><title type="html">外号</title><link href="/life/nick-name.html" rel="alternate" type="text/html" title="外号" /><published>2018-01-01T19:15:00+08:00</published><updated>2018-01-01T19:15:00+08:00</updated><id>/life/nick-name</id><content type="html" xml:base="/life/nick-name.html">&lt;p&gt;就我记事以来，我就三个外号。&lt;/p&gt;
+
+&lt;p&gt;小学到初中，可能因为名字的原因，朋友都叫我良民，叫的挺顺口的，我也觉得挺好的，平时也是个好人模样，对得起这外号。&lt;/p&gt;
+
 &lt;!-- more --&gt;
-拟把疏狂图一醉，对酒当歌，强乐还无味。衣带渐宽终不悔，为伊消得人憔悴。&lt;/p&gt;
 
-&lt;p&gt;柳永，我最喜欢的词人，没有之一。&lt;/p&gt;
+&lt;p&gt;高中，大家叫我兔子？没明白，可能那个时候状态不太好，有点萌萌哒（闷闷的）。&lt;/p&gt;
 
-&lt;p&gt;记得高三晚上熄灯后，大家都会打着台灯再学习一会儿，而我，要是有新一期的知音漫客就会游历其中，要是没有就会拜读宋词鉴赏辞典，沉醉其里。&lt;/p&gt;
-
-&lt;p&gt;从一开始雨霖铃的初步了解，到后来看到他越来越多的词，也就越来越欣赏他。通过他的词经历他的一切，感觉一切都是享受。&lt;/p&gt;
-
-&lt;p&gt;这首词是怀人之作。“伫倚危楼，望极春愁”，我也会思乡怀人，只是如今没了危楼，生活在热闹人间，少有时间用来眺望远方，怀念过往，也不会因为草色烟光，春色残照徒添愁绪，或许是自己被生活麻木了，忘记了远方，或许是自己被孤独戕害了，不敢去怀念。&lt;/p&gt;
-
-&lt;p&gt;“对酒当歌，强乐无味”，我也醉过，也强颜欢笑过，知道其中滋味。&lt;/p&gt;
-
-&lt;p&gt;“衣带渐宽终不悔，为伊消得人憔悴”，情何至此？有一段时间，很长一段时间，我也这般思恋一个人，这般坚定，这般决绝，不知她在何方，只知道自己的那颗心在这里，知道那种感觉不会变。当然，还是没经得起时间，毕竟终未再见。&lt;/p&gt;
-
-&lt;p&gt;的确，有些情很深，有些情很淡，有些情很远，有些情很近，我时常告诉自己，珍惜抓得住的情。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="peom" /><summary type="html">伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。</summary></entry><entry><title type="html">不失眠</title><link href="/life/article-bsm.html" rel="alternate" type="text/html" title="不失眠" /><published>2016-12-06T22:17:32+08:00</published><updated>2016-12-06T22:17:32+08:00</updated><id>/life/article-bsm</id><content type="html" xml:base="/life/article-bsm.html">&lt;p&gt;梦到似颦似笑班主任&lt;/p&gt;
-
-&lt;p&gt;梦见你我他与她&lt;/p&gt;
-
-&lt;p&gt;梦得太逼真&lt;/p&gt;
-
-&lt;p&gt;几乎成记忆&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;叨我怀疑那些曾经老梗不过一场梦&lt;/p&gt;
-
-&lt;p&gt;只是&lt;/p&gt;
-
-&lt;p&gt;愿意记得&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这几天梦到初中班主任，很是感慨。因为初中班主任对我帮助很大，但毕业之后一直没机会说一声感谢。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">梦到似颦似笑班主任</summary></entry></feed>
+&lt;p&gt;大学，有几个同学叫我小旋风，因为刚进入大学，整个人精神满满，整个练练肌肉，然后与跟别人扳手劲，扳又扳不过，继续练肌肉，继续扳不过，像个小旋风？&lt;/p&gt;</content><author><name>leonmin</name></author><category term="record" /><summary type="html">就我记事以来，我就三个外号。</summary></entry><entry><title type="html">说说</title><link href="/life/word-002.html" rel="alternate" type="text/html" title="说说" /><published>2017-11-08T17:20:32+08:00</published><updated>2017-11-08T17:20:32+08:00</updated><id>/life/word-002</id><content type="html" xml:base="/life/word-002.html">&lt;p&gt;我希望，如电影般的，在必要的时候，比如在程序员做不下去的时候，掏出我老艺术家的身份。&lt;/p&gt;</content><author><name>leonmin</name></author><category term="word" /><summary type="html">我希望，如电影般的，在必要的时候，比如在程序员做不下去的时候，掏出我老艺术家的身份。</summary></entry></feed>

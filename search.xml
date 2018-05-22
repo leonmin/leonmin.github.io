@@ -2,6 +2,34 @@
 <search>
   
     <entry>
+      <title><![CDATA[学海无涯]]></title>
+      <url>/article/school-life.html</url>
+      <content type="html"><![CDATA[<p>总结一下这十几年的学习之路吧。</p>
+
+<p>幼儿园，整天耍，没啥印象。</p>
+
+<p>小学，开始和小伙伴玩，边学边耍，边耍边学，差点留级。</p>
+
+<!-- more -->
+
+<p>中学，开始有点上道的感觉，开始觉得学习很重要，朋友很重要，但还是要耍好。</p>
+
+<p>高中，高中真的是酸甜苦辣都有，学习压力开始变大，玩的东西也变多。最令我影响深刻的就是一款手机游戏和动漫了。那时候，拿着Nokia什么来着，玩着回合制的游戏，乐在其中，花了不少钱，完了一两年，天天刷副本，很简单很快乐，很充实，还记得有一年国庆节门都没出，玩了7天这个游戏。另一个就是动漫了，那时把搜狐和pptv上不幼稚，非国产的动漫看的差不多，没什么看的了。反而到了大学，突然动漫翻天覆地迎面而来，一时还不知道看啥，所以大学看的动漫少，只看了火影，海贼王，东京吃货，寄生兽，小埋等。</p>
+
+<p>大学，开始贯彻宅文化，每天在寝室打游戏，看电影。打游戏，和朋友开开黑，还是挺有意思的。看电影，高中还喜欢看看韩国电影，奇幻，血腥，上了大学，喜欢看日本电影，漫改，爱情，喜剧，科幻，只要评分上6分，或有我认识的明星我一般都会看。大学还追了下美剧，高中时看铁杉树丛入的坑，后来在朋友推荐下看了行尸走肉，又看了基本演绎法，硅谷，西部世界，感觉世界真奇妙。</p>
+]]></content>
+      <categories>
+        
+          <category> article </category>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[毕业论文心路]]></title>
       <url>/article/thesis.html</url>
       <content type="html"><![CDATA[<p>今天弄完毕业论文这一摊子事，算是结束了大学生活。但就完成毕业论文其中的艰辛，我觉得有必要记录一下。</p>
@@ -41,6 +69,29 @@
 <p>我不是感慨论文有多麻烦或是老师要求太严格，而是为什么会这样，要是自己一开始就认真对待，认真修改格式，会有后面的问题吗？我之所以记录这件事，就想提醒自己有一个良好的编码习惯，养成一套良好的编程规范，要说养成其他什么好习惯，太扯了，不提。</p>
 
 <p>当然要说明一下，怎么一直在修改格式，其实这其中也有很多问题，学院给了一个模板，要求都很明确，又不是那么的明确，院上的标准又和系上的标准又没统一。就感觉没有编码规范一样。我一直在想，要是有时间，我都想把整个论文格式整理一遍，让学弟学妹少走弯路，但后来听指导老师想弄，我也就不费那神了。</p>
+
+]]></content>
+      <categories>
+        
+          <category> article </category>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[班级聚餐]]></title>
+      <url>/article/dine-together.html</url>
+      <content type="html"><![CDATA[<p>今天参加完毕业答辩，班上组织了聚餐。记得上一次班级聚餐是..我忘了，但还有图。</p>
+
+<!-- more -->
+
+<p><img src="/assets/images/posts/dine1.png" alt="dine1" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/dine2.png" alt="dine2" class="post-s-img" /></p>
 
 ]]></content>
       <categories>
@@ -115,7 +166,7 @@
 
 <p>大二的时候自己可以做一些优美的页面，就有了做博客的想法，然后开始百度建站大法，知道了建站需要买域名和主机，和各种配置。</p>
 
-<p>大三的时候觉得时机成熟了，买了几个域名，有leonming.com和ucarry.me两个域名，还买了一个云主机。卖完后才知道国内线路主机上的网站部署需要备案，备案又很麻烦，备案后，然后写了一个简单的页面放在网上，也就是一个展示的页面，没什么意识，意思到要学一门后端语言，当时说PHP是最好的语言，然后又入了一下门，买了教程，开始一步一步搭建网站。刚好大三选方向，选到了ASP.NET方向，老师都极为给力，每天都给一大堆作业，搞得我没时间学PHP，就开始老实地学习ASP.NET。</p>
+<p>大三的时候觉得时机成熟了，买了几个域名，有leonming.com和ucarry.me两个域名，还买了一个云主机。买完后才知道国内线路主机上的网站部署需要备案，备案又很麻烦，备案后，然后写了一个简单的页面放在网上，也就是一个展示的页面，没什么意思，意识到要学一门后端语言，当时说PHP是最好的语言，然后又入了一下门，买了教程，开始一步一步搭建网站。刚好大三选方向，选到了ASP.NET方向，老师都极为给力，每天都给一大堆作业，搞得我没时间学PHP，就开始老实地学习ASP.NET。</p>
 
 <p>后来又买了leonmin.com和leonm.in两个网站。</p>
 
@@ -167,6 +218,66 @@
     </entry>
   
     <entry>
+      <title><![CDATA[家]]></title>
+      <url>/article/home.html</url>
+      <content type="html"><![CDATA[<p>每次过年回家都会去湾里转转，每次都会拍些照，每次换了手机照片都不见了，然后又等下一次过年回家，去湾里重新拍照。</p>
+
+<!-- more -->
+
+<p><img src="/assets/images/posts/home0.jpg" alt="home0" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home1.jpg" alt="home1" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home2.jpg" alt="home2" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home3.jpg" alt="home3" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home4.jpg" alt="home4" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home5.jpg" alt="home5" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home6.jpg" alt="home6" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/home7.jpg" alt="home7" class="post-s-img" /></p>
+]]></content>
+      <categories>
+        
+          <category> article </category>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[外号]]></title>
+      <url>/life/nick-name.html</url>
+      <content type="html"><![CDATA[<p>就我记事以来，我就三个外号。</p>
+
+<p>小学到初中，可能因为名字的原因，朋友都叫我良民，叫的挺顺口的，我也觉得挺好的，平时也是个好人模样，对得起这外号。</p>
+
+<!-- more -->
+
+<p>高中，大家叫我兔子？没明白，可能那个时候状态不太好，有点萌萌哒（闷闷的）。</p>
+
+<p>大学，有几个同学叫我小旋风，因为刚进入大学，整个人精神满满，整个练练肌肉，然后与跟别人扳手劲，扳又扳不过，继续练肌肉，继续扳不过，像个小旋风？</p>
+]]></content>
+      <categories>
+        
+          <category> life </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> record </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[说说]]></title>
       <url>/life/word-002.html</url>
       <content type="html"><![CDATA[<p>我希望，如电影般的，在必要的时候，比如在程序员做不下去的时候，掏出我老艺术家的身份。</p>
@@ -179,6 +290,30 @@
       <tags>
         
           <tag> word </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[旅游]]></title>
+      <url>/article/travel.html</url>
+      <content type="html"><![CDATA[<p>大学固然宅，但还是和朋友出去玩了两次，一次是去龙泉驿看桃花，一次是去重庆玩了两天。</p>
+
+<!-- more -->
+
+<p><img src="/assets/images/posts/travel1.png" alt="travel1" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/travel2.jpeg" alt="travel2" class="post-s-img" /></p>
+
+<p>旅游心得：不想成为好驴友的室友不是好基友。</p>
+]]></content>
+      <categories>
+        
+          <category> article </category>
+        
+      </categories>
+      <tags>
         
       </tags>
       <tags></tags>
@@ -219,6 +354,42 @@
       <tags>
         
           <tag> record </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[发型]]></title>
+      <url>/article/hairstyle.html</url>
+      <content type="html"><![CDATA[<p>人生充满着转变，就发型来说，去年就发生了转变。</p>
+
+<p>从小时候开始，就喜欢留长发，也不知道为啥，长发即真理。特别是理发的时候，对理发师说剪短点，留长点，生怕理发师剪多了。</p>
+
+<!-- more -->
+
+<p>去年去烫了个头，然后就开始留长发，扎了个小辫子。</p>
+
+<p>自己也不知道有多糗，反正是越糗越自信。</p>
+
+<p><img src="/assets/images/posts/hair1.jpeg" alt="hair1" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/hair2.jpeg" alt="hair2" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/hair4.jpeg" alt="hair4" class="post-s-img" /></p>
+
+<p><img src="/assets/images/posts/hair3.jpeg" alt="hair3" class="post-s-img" /></p>
+
+<p>其间理过一次发，后来又留长了。感觉瘾过够了，就没有留长发了。</p>
+
+<p>反而从此再也不想留长发了。每次理发都希望理发师多剪一点。</p>
+]]></content>
+      <categories>
+        
+          <category> article </category>
+        
+      </categories>
+      <tags>
         
       </tags>
       <tags></tags>
@@ -381,6 +552,35 @@
 <hr />
 
 <p>匆匆二十年，家里养过两只猫。上了高中以后，就很少有机会接触猫了，我一个重度吸猫者…</p>
+]]></content>
+      <categories>
+        
+          <category> article </category>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[买碟]]></title>
+      <url>/article/buy-cd.html</url>
+      <content type="html"><![CDATA[<p>上高中，放月假的时候，我坐班车回家，刚下班车，打算买些动画影碟拿回家看。走进影碟店，老板娘问我要不要3D片。</p>
+
+<p>我：？？</p>
+
+<!-- more -->
+
+<p>那时候对3D还没什么概念就没理她，继续找动漫碟，无意间瞟见了旁边一个书包里放着不可思议的碟片，瞬间懂了。</p>
+
+<p>然后我继续找，找到了海贼王的合集影碟，上面写着10张，500多集。哇，瞬间觉得找到宝了。</p>
+
+<p>我问老板娘，这碟多少钱。老板娘说5元一张，一共50块。因为我从来不讲价，直接掏钱，结果发现兜里只有45块，要是搁以前我就走了，但是海贼王的魅力，只好讲价了。</p>
+
+<p>然后跟老板娘好说歹说，最后买下了。高高兴兴地回到家，打开包装，一数，只有9张，而且刚才影碟一直在我手上，这真是简直了。</p>
+
 ]]></content>
       <categories>
         
