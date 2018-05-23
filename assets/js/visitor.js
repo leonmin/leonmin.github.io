@@ -97,9 +97,14 @@ AV.initialize("tQMeihfMsmq37drtkuQBMNH2-gzGzoHsz", "qoQthGkWfTRyzzbEVJfIAPet");
 
 	$(function () {
 		var Counter = AV.Object.extend("Counter");
-		if ($('.leancloud_visitors').length == 1) {
+		// if ($('.leancloud_visitors').length == 1) {
+		// 	addCount(Counter);
+		// } else if ($('.leancloud_visitors').length > 1) {
+		// 	showTime(Counter);
+		// }
+		if($('.index-post').length == 0){
 			addCount(Counter);
-		} else if ($('.leancloud_visitors').length > 1) {
+		}else if($('.index-post').length > 0){
 			showTime(Counter);
 		}
 	});
