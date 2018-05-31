@@ -273,9 +273,8 @@ progress::-webkit-progress-bar { background-color: transparent; }
 /**
 * 7. Pages Layer
 */
-.page-lost { width: 400px; height: 400px; margin: 120px auto 0; text-align: center; font-weight: 100; }
-.page-lost .page-lost-404 { font-size: 5em; }
-.page-lost p { font-size: 2em; }
+.page-lost { text-align: center; font-weight: 100; }
+.page-lost p { font-size: 1.2em; }
 
 .about-container img { display: block; width: 80%; margin: 0 auto; }
 @media (max-width: 414px) { .about-container img { width: 90vw; margin-top: calc((100vh - 145px - 40px - 90vw) / 2); } }
@@ -289,7 +288,7 @@ progress::-webkit-progress-bar { background-color: transparent; }
 .pages .page-title { text-align: center; line-height: 80px; font-weight: 400; font-size: 1.4em; }
 @media (min-width: 992px) { .pages { margin: 0; } }
 
-.page-list { border: 1px solid #ccc; float: left; margin: 2vw; position: relative; font-weight: 333; }
+.page-list { border: 1px solid #ccc; box-shadow: 2px 2px 2px #dcdcdc; float: left; margin: 2vw; position: relative; font-weight: 333; }
 @media (max-width: 414px) { .page-list { border-radius: var(--m-radius); width: var(--m-width); height: var(--m-width); font-size: 1.2em; } }
 @media (min-width: 415px) and (max-width: 768px) { .page-list { border-radius: var(--p-radius); width: var(--p-width); height: var(--p-width); font-size: 1.2em; } }
 @media (min-width: 769px) and (max-width: 991px) { .page-list { width: var(--t-width); height: var(--t-width); border-radius: var(--t-radius); font-size: 1.5em; } }
@@ -316,3 +315,14 @@ progress::-webkit-progress-bar { background-color: transparent; }
 .page-list:nth-child(5n+1)::after { background: #ed3c63; }
 
 .page-list:nth-child(6n+1)::after { background: #df7782; }
+
+.user { height: 80vw; width: 90%; margin: 62px auto 0; }
+.user .user-info { background: #fff; height: 120px; margin: 0 auto 10px; border: 1px solid #fff; text-align: center; }
+.user .user-info .user-avatar { width: 100px; height: 100px; border-radius: 53px; margin: -50px auto 0; border: 6px solid #eee; }
+.user .user-info .user-avatar img { display: block; width: 100px; height: 100px; border-radius: 50px; }
+.user .user-info .user-name { margin: 4px auto; font-size: 1.2em; font-weight: bold; }
+.user .user-card { background: #fff; margin-bottom: 10px; }
+.user .user-card h4 { font-size: 1.3em; font-weight: 300; }
+.user .user-card a { display: block; height: 30px; margin: 0 10px; }
+.user .user-card a .day-date, .user .user-card a .day-title { display: inline-block; line-height: 30px; font-weight: 350; }
+.user .user-card .uc-music, .user .user-card .uc-movie, .user .user-card .uc-tv { line-height: 28px; margin: 0 10px; }

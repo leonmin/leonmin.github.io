@@ -47,8 +47,8 @@ AV.initialize("tQMeihfMsmq37drtkuQBMNH2-gzGzoHsz", "qoQthGkWfTRyzzbEVJfIAPet");
 
 	function addCount(Counter) {
 		var $visitors = $(".leancloud_visitors");
-		var url = $visitors.attr('id').trim();
-		var title = $visitors.attr('data-flag-title').trim();
+		var url = $visitors.attr('id');
+		var title = $visitors.attr('data-flag-title');
 		var query = new AV.Query(Counter);
 
 		query.equalTo("url", url);
