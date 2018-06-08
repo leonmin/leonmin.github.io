@@ -278,17 +278,19 @@ progress::-webkit-progress-bar { background-color: transparent; }
 
 .about-container img { display: block; width: 80%; margin: 0 auto; }
 @media (max-width: 414px) { .about-container img { width: 90vw; margin-top: calc((100vh - 145px - 40px - 90vw) / 2); } }
+.about-container .lost { display: block; width: 70%; margin: 50px auto 0; }
+@media (max-width: 414px) { .about-container .lost { width: 70vw; margin-top: calc((100vh - 145px - 40px - 80vw) / 2); margin-bottom: 20px; } }
 
 .archive h1 { width: 90%; height: 36px; background: #aaa; color: #fff; font-weight: 400; line-height: 36px; margin: 10px auto 5px; padding-left: 10px; box-sizing: border-box; box-shadow: 2px 2px 2px #ccc; }
 .archive .day { display: block; width: 90%; height: 36px; margin: 5px auto; box-shadow: 2px 2px 2px #ccc; }
 .archive .day .day-date { font-size: 1.2em; font-weight: 300; text-align: center; line-height: 36px; background: #ccc; color: #fff; height: 36px; width: 18%; float: left; }
-.archive .day p { padding-left: 5px; box-sizing: border-box; line-height: 36px; height: 36px; width: 80%; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.archive .day p { padding-left: 5px; box-sizing: border-box; line-height: 36px; height: 36px; background: #fff; width: 80%; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .pages { margin: 0 4vw; --m-width:calc((100vw - 20vw - 6px) / 3); --m-radius:calc((100vw - 20vw - 6px) / 6); --m-line-height:calc((100vw - 20vw - 6px) * 4 / 15); --m-before: calc((100vw - 20vw - 6px) / 100); --p-width:calc((90vw - 24vw - 8px) / 4); --p-radius:calc((90vw - 24vw - 8px) / 8); --p-line-height:calc((90vw - 24vw - 8px) / 5); --t-width:calc((80vw - 24vw - 8px) / 4); --t-radius:calc((80vw - 24vw - 8px) / 8); --t-line-height:calc((80vw - 24vw - 8px) / 5); --d-width: 120px; --d-radius: 60px; --d-line-height: 96px; }
 .pages .page-title { text-align: center; line-height: 80px; font-weight: 400; font-size: 1.4em; }
 @media (min-width: 992px) { .pages { margin: 0; } }
 
-.page-list { border: 1px solid #ccc; box-shadow: 2px 2px 2px #dcdcdc; float: left; margin: 2vw; position: relative; font-weight: 333; }
+.page-list { border: 1px solid #ccc; box-shadow: 2px 2px 2px #dcdcdc; float: left; margin: 1vw 2vw; position: relative; font-weight: 333; }
 @media (max-width: 414px) { .page-list { border-radius: var(--m-radius); width: var(--m-width); height: var(--m-width); font-size: 1.2em; } }
 @media (min-width: 415px) and (max-width: 768px) { .page-list { border-radius: var(--p-radius); width: var(--p-width); height: var(--p-width); font-size: 1.2em; } }
 @media (min-width: 769px) and (max-width: 991px) { .page-list { width: var(--t-width); height: var(--t-width); border-radius: var(--t-radius); font-size: 1.5em; } }
@@ -317,12 +319,22 @@ progress::-webkit-progress-bar { background-color: transparent; }
 .page-list:nth-child(6n+1)::after { background: #df7782; }
 
 .user { height: 80vw; width: 90%; margin: 62px auto 0; }
-.user .user-info { background: #fff; height: 120px; margin: 0 auto 10px; border: 1px solid #fff; text-align: center; }
+.user .user-info { background: #fff; height: 300px; margin: 0 auto 10px; border: 1px solid #fff; text-align: center; position: relative; }
 .user .user-info .user-avatar { width: 100px; height: 100px; border-radius: 53px; margin: -50px auto 0; border: 6px solid #eee; }
 .user .user-info .user-avatar img { display: block; width: 100px; height: 100px; border-radius: 50px; }
-.user .user-info .user-name { margin: 4px auto; font-size: 1.2em; font-weight: bold; }
+.user .user-info .user-name { color: #fff; display: inline-block; background: rgba(0, 0, 0, 0.2); margin: 4px auto; font-size: 1.2em; font-weight: bold; padding: 5px; }
+.user .user-info .user-desc { display: inline-block; color: #fff; background: rgba(0, 0, 0, 0.3); padding: 5px; }
 .user .user-card { background: #fff; margin-bottom: 10px; }
 .user .user-card h4 { font-size: 1.3em; font-weight: 300; }
 .user .user-card a { display: block; height: 30px; margin: 0 10px; }
 .user .user-card a .day-date, .user .user-card a .day-title { display: inline-block; line-height: 30px; font-weight: 350; }
 .user .user-card .uc-music, .user .user-card .uc-movie, .user .user-card .uc-tv { line-height: 28px; margin: 0 10px; }
+
+.goal-wrapper { background: #fff; }
+.goal-wrapper .goal-main { background: url(../../assets/images/site/goals.png) no-repeat; background-size: 80%; background-position: right top; padding-top: 30px; padding-bottom: 50px; }
+.goal-wrapper .goal-main h3 { color: #333372; font-size: 1.2em; margin: 0 10px 100px; }
+.goal-wrapper .goal-main h4 { margin: 5px 0 5px 20px; text-decoration: underline; font-weight: 300; font-size: 1.25em; }
+
+.goal-list { margin: 5px 0 5px 35px; line-height: 30px; text-decoration: underline; text-decoration-style: dashed; }
+
+.goal-f { color: #199645; text-decoration-color: #199645; }
