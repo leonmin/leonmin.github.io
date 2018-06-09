@@ -278,6 +278,8 @@ progress::-webkit-progress-bar { background-color: transparent; }
 
 .about-container img { display: block; width: 80%; margin: 0 auto; }
 @media (max-width: 414px) { .about-container img { width: 90vw; margin-top: calc((100vh - 145px - 40px - 90vw) / 2); } }
+.about-container .about { display: block; width: 100%; }
+@media (max-width: 414px) { .about-container .about { width: 100vw; margin: 0 auto; } }
 .about-container .lost { display: block; width: 70%; margin: 50px auto 0; }
 @media (max-width: 414px) { .about-container .lost { width: 70vw; margin-top: calc((100vh - 145px - 40px - 80vw) / 2); margin-bottom: 20px; } }
 
@@ -319,12 +321,11 @@ progress::-webkit-progress-bar { background-color: transparent; }
 .page-list:nth-child(6n+1)::after { background: #df7782; }
 
 .user { height: 80vw; width: 90%; margin: 62px auto 0; }
-.user .user-info { background: #fff; height: 300px; margin: 0 auto 10px; border: 1px solid #fff; text-align: center; position: relative; }
+.user .user-info { background: #fff; height: 130px; margin: 0 auto 10px; border: 1px solid #fff; text-align: center; }
 .user .user-info .user-avatar { width: 100px; height: 100px; border-radius: 53px; margin: -50px auto 0; border: 6px solid #eee; }
 .user .user-info .user-avatar img { display: block; width: 100px; height: 100px; border-radius: 50px; }
-.user .user-info .user-name { color: #fff; display: inline-block; background: rgba(0, 0, 0, 0.2); margin: 4px auto; font-size: 1.2em; font-weight: bold; padding: 5px; }
-.user .user-info .user-desc { display: inline-block; color: #fff; background: rgba(0, 0, 0, 0.3); padding: 5px; }
-.user .user-card { background: #fff; margin-bottom: 10px; }
+.user .user-info .user-name { margin: 4px auto; font-size: 1.2em; font-weight: bold; }
+.user .user-card { background: #fff; margin-bottom: 10px; padding: 5px; }
 .user .user-card h4 { font-size: 1.3em; font-weight: 300; }
 .user .user-card a { display: block; height: 30px; margin: 0 10px; }
 .user .user-card a .day-date, .user .user-card a .day-title { display: inline-block; line-height: 30px; font-weight: 350; }
