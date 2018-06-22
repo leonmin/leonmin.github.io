@@ -339,3 +339,5 @@ progress::-webkit-progress-bar { background-color: transparent; }
 .goal-list { margin: 5px 0 5px 35px; line-height: 30px; text-decoration: underline; text-decoration-style: dashed; }
 
 .goal-f { color: #199645; text-decoration-color: #199645; }
+
+.goal-u { color: red; text-decoration: line-through; }
